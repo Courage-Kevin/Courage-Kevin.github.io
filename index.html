@@ -245,7 +245,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Courage-Kevin">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -332,149 +332,14 @@
 
       
         
-          
-            <h2 id="Java编译运行过程"><a href="#Java编译运行过程" class="headerlink" title="Java编译运行过程"></a>Java编译运行过程</h2><ol>
-<li>编译期：java源文件，经编译生成.class文件</li>
-<li>运行期：JVM加载.class文件，并运行class</li>
-<li>特点：跨平台，一次编译到处使用</li>
-</ol>
-<h2 id="名词释义"><a href="#名词释义" class="headerlink" title="名词释义"></a>名词释义</h2><ol>
-<li>JVM：java虚拟机，作用就是加载.class文件，运行.class文件</li>
-<li>JRE： java开发环境，除了包含JVM外，还包含java程序运行所必须的环境</li>
-<li>JDK：java开发工具包，除了包含JRE外，还包含编译，运行等命令工具3. </li>
-</ol>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><table>
-<thead>
-<tr>
-<th><strong>byte类型</strong></th>
-<th><strong>8位</strong></th>
-<th><strong>范围：-128~127</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>short 类型</strong></td>
-<td><strong>16位</strong></td>
-<td><strong>范围：-32768~32767</strong></td>
-</tr>
-<tr>
-<td><strong>char  类型</strong></td>
-<td><strong>16位</strong></td>
-<td><strong>范围：\u0000~\u65535</strong></td>
-</tr>
-<tr>
-<td><strong>int类型</strong></td>
-<td><strong>32位</strong></td>
-<td><strong>范围：-2147483648~2147483647</strong></td>
-</tr>
-<tr>
-<td><strong>long 类型</strong></td>
-<td><strong>64位</strong></td>
-<td><strong>范围：很大很大 2^63</strong></td>
-</tr>
-<tr>
-<td><strong>float 类型</strong></td>
-<td><strong>32位</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>double 类型</strong></td>
-<td><strong>64位</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>boolean 类型</strong></td>
-<td><strong>8位</strong></td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="基本类型自动转换"><a href="#基本类型自动转换" class="headerlink" title="基本类型自动转换"></a>基本类型自动转换</h2><ol>
-<li>从小到大依次为：byte &lt; short &lt; int &lt; long &lt; float &lt; double</li>
-<li>自动类型转换：小类型转大类型 （小杯子往大杯子倒水）</li>
-<li>强制类型转换：大类型转小类型 （大杯子往小杯子倒数）</li>
-</ol>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
-<li>算数：    +，-，*，/，%，++，–</li>
-<li>关系：&gt;,&lt;,&gt;=,&lt;=,==,!=,boolean</li>
-<li>逻辑：&amp;&amp;，||，!boolean</li>
-<li>赋值：=，+=，-=，*=，/=，%=</li>
-<li>字符连接运算符：+</li>
-<li>条件/三目运算：boolean?数1:数2;</li>
-</ol>
-<h2 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h2><ol>
-<li>If</li>
-<li>If…else</li>
-<li>If…elss     if</li>
-<li>Switch…case</li>
-</ol>
-<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><ol>
-<li>while循环</li>
-<li>do…while循环</li>
-<li>for循环</li>
-</ol>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
-<li>数组的定义：int [ ] arr =new int [ 10 ] </li>
-<li>数组的初始化：int [ ] arr = new int [ ] </li>
-<li>数组的访问：通过数组名.length可以获取数组的长度，也就是数组内元素的个数通过索引来访问数组元素，下标从0开始，最大到数组长度-1</li>
-<li>数组遍历<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    arr[<span class="number">3</span>] = (<span class="keyword">int</span>) (Math.random() * <span class="number">100</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    System.out.println(arr[i]);    <span class="comment">//正序输出</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = arr.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">    System.out.println(arr[i]);    <span class="comment">//倒序输出</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
-<thead>
-<tr>
-<th><strong>private</strong></th>
-<th><strong>同类可见</strong></th>
-<th><strong>可以修饰变量、方法</strong></th>
-<th><strong>注意：不能修饰类(外部类)</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>default</strong></td>
-<td><strong>同包同类可见</strong></td>
-<td><strong>可以修饰类、接口、变量、方法</strong></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>protected</strong></td>
-<td><strong>同包同类和所有子类可见</strong></td>
-<td><strong>可以修饰变量、方法</strong></td>
-<td><strong>注意不能修饰类(外部类)</strong></td>
-</tr>
-<tr>
-<td><strong>public</strong></td>
-<td><strong>所有类可见</strong></td>
-<td><strong>可以修饰类、接口、变量、方法</strong></td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="非访问修饰符"><a href="#非访问修饰符" class="headerlink" title="非访问修饰符"></a>非访问修饰符</h2><p>为了实现某一些功能，java也提供了许多非访问修饰符</p>
-<ol>
-<li>static修饰符：被static修饰的变量和方法叫做静态变量和静态方法<ul>
-<li>静态变量：static关键字用来声明独立于对象的静态变量，无论一个类实例化多少对象，他的静态变量只有一份拷贝</li>
-<li>静态方法：static关键字用来声明独立于对象的静态方法，静态方法不能使用类的非静态变量(静态方法只能使用类的静态变量)   </li>
-</ul>
-</li>
-<li>final修饰符：<ul>
-<li>final变量：不能被重新赋值</li>
-<li>final方法：final修饰的方法可以被子类继承，但是不能被子类修改</li>
-<li>final类：  final类不能被继承，没有类能够继承final类的任何特征</li>
-</ul>
-</li>
-<li>abstract修饰符：<ul>
-<li>抽象类：抽象类不能用来实例化对象，目的：是为了将来对该类进行扩充。</li>
-<li>抽象方法：继承抽象类的子类必须实现父类的所有抽象方法，除非这个子类也是抽象类，</li>
-<li>注意：如果一个类包含若干个抽象方法，那么该类必须声明为抽象类，抽象类不可以包含抽象方法。</li>
-</ul>
-</li>
-<li>抽象加单总结：<ul>
-<li>抽象方法的意义：在于将方法的设计和方法的实现分离。</li>
-<li>抽象类需要被继承，抽象类定义的抽象方法子类必须重写。</li>
-<li>抽象类不能创建对象，但是可以包含构造方法，成员属性，普通方法。</li>
-</ul>
-</li>
-</ol>
-
-          
+          <h2 id="简单总结Java基础的一些知识点，没事翻一翻。"><a href="#简单总结Java基础的一些知识点，没事翻一翻。" class="headerlink" title="简单总结Java基础的一些知识点，没事翻一翻。"></a>简单总结Java基础的一些知识点，没事翻一翻。</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/05/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -543,6 +408,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Courage-Kevin" />
+            
               <p class="site-author-name" itemprop="name">Courage-Kevin</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -564,10 +433,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
