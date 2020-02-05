@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a6992f;
+  background: #ffffc1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2659,4 +2659,37 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.header {
+  background: url("http://snippet.shenliyang.com/img/banner.jpg");
+  margin-bottom: 20px;
+}
+.header .menu .menu-item a {
+  color: #fff;
+  font-size: 18px;
+}
+body {
+/* 背景图垂直、水平均居中 */
+  background-position: center center;
+/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+/* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+/* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color: #f7f7f7 no-repeat;
+}
+.content {
+  border-radius: 10px;
+  padding: 30px 60px 30px 60px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+#sidebar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: whiter;
 }
