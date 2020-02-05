@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -1237,7 +1237,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffc1;
+  background: #de8ca1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2662,7 +2662,6 @@ embed {
 }
 .header {
   background: url("http://snippet.shenliyang.com/img/banner.jpg");
-  margin-bottom: 20px;
 }
 .header .menu .menu-item a {
   color: #fff;
@@ -2683,13 +2682,6 @@ body {
   padding: 30px 60px 30px 60px;
   background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
-#sidebar {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#sidebar p,
-#sidebar span,
-#sidebar a {
-  color: whiter;
+#sidebar .links-of-blogroll {
+  margin-top: 400px;
 }
