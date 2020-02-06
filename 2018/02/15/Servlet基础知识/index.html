@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="基础知识," />
 
 
 
@@ -81,14 +81,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://courage-kevin.github.io/about/index.html">
+<meta name="description" content="ServletServlet概述  Servlet本质上一段java程序 Servlet程序无法独立运行，必须放在服务器中，由服务器调用才可以执行！ Servlet的作用是：接受请求、处理请求、将结果响应给浏览器。   Servlet的作用 Servlet的作用就是处理请求，服务器会将接受到的请求交给Servlet处理。这个过程为：  客户端发送请求至服务器端； 服务器将请求信息交给 Servle">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Servlet基础知识">
+<meta property="og:url" content="https://courage-kevin.github.io/2018/02/15/Servlet%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="Courage-Kevin 个人博客">
-<meta property="article:published_time" content="2020-02-04T16:00:15.000Z">
-<meta property="article:modified_time" content="2020-02-05T07:38:38.846Z">
+<meta property="og:description" content="ServletServlet概述  Servlet本质上一段java程序 Servlet程序无法独立运行，必须放在服务器中，由服务器调用才可以执行！ Servlet的作用是：接受请求、处理请求、将结果响应给浏览器。   Servlet的作用 Servlet的作用就是处理请求，服务器会将接受到的请求交给Servlet处理。这个过程为：  客户端发送请求至服务器端； 服务器将请求信息交给 Servle">
+<meta property="og:image" content="https://courage-kevin.github.io/images/servlet%E8%B0%83%E7%94%A8%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png">
+<meta property="article:published_time" content="2018-02-15T12:55:43.000Z">
+<meta property="article:modified_time" content="2020-02-06T09:11:14.080Z">
 <meta property="article:author" content="Courage-Kevin">
+<meta property="article:tag" content="基础知识">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://courage-kevin.github.io/images/servlet%E8%B0%83%E7%94%A8%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png">
 
 
 
@@ -118,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://courage-kevin.github.io/about/"/>
+  <link rel="canonical" href="https://courage-kevin.github.io/2018/02/15/Servlet基础知识/"/>
 
 
 
 
 
-  <title>about | Courage-Kevin 个人博客</title>
+  <title>Servlet基础知识 | Courage-Kevin 个人博客</title>
   
 
 
@@ -263,33 +268,235 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2018/02/15/Servlet%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Courage-Kevin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Courage-Kevin 个人博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">Servlet基础知识</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-15T20:55:43+08:00">
+                2018-02-15
+              </time>
+            
+
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Servlet%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">Servlet基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h1><h2 id="Servlet概述"><a href="#Servlet概述" class="headerlink" title="Servlet概述"></a>Servlet概述</h2><blockquote>
+<ol>
+<li>Servlet本质上一段java程序</li>
+<li>Servlet程序无法独立运行，必须放在服务器中，由服务器调用才可以执行！</li>
+<li>Servlet的作用是：接受请求、处理请求、将结果响应给浏览器。</li>
+</ol>
+</blockquote>
+<h2 id="Servlet的作用"><a href="#Servlet的作用" class="headerlink" title="Servlet的作用"></a>Servlet的作用</h2><blockquote>
+<p>Servlet的作用就是处理请求，服务器会将接受到的请求交给Servlet处理。这个过程为：</p>
+<ol>
+<li>客户端发送请求至服务器端；</li>
+<li>服务器将请求信息交给 Servlet 处理；</li>
+<li>最终处理的结果交给服务器；</li>
+<li>服务器将结果响应给客户端。</li>
+</ol>
+</blockquote>
+<h2 id="Servlet调用过程"><a href="#Servlet调用过程" class="headerlink" title="Servlet调用过程"></a>Servlet调用过程</h2><blockquote>
+<p><img src="/images/servlet%E8%B0%83%E7%94%A8%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png" alt="avatar"></p>
+<ol>
+<li>浏览器向服务器发起请求</li>
+<li>首先会根据请求头信息获知浏览器访问的是那个虚拟主机</li>
+<li>然后根据请求行中的路径资源获知浏览器访问的是哪一个web应用</li>
+<li>根据请求行中的资源路径获知访问的是哪一个资源</li>
+<li>根据获取到的资源路径到web.项目文件中去匹配真实路径，创建servlet实例并调用service方法</li>
+<li>调用service方法前，底层会创建两个对象，Requset、response，通过request获取请求相关信息</li>
+<li>通过response想浏览器发送响应数据，然后按照Http协议规定的格式，组织成相应消息，最后发送给浏览器</li>
+</ol>
+</blockquote>
+<h2 id="Servlet生命周期"><a href="#Servlet生命周期" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h2><blockquote>
+<p>&emsp;Servlet在第一次被访问时创建Servlet实例, 创建之后服务器会立即调用init方法进行初始化的操作, 创建之后, Servlet实例会一直驻留在服务器的内存中, 为后续的请求服务. 只要有请求来访问这个Servlet, 服务器就会调用service方法来处理请求, 直到服务器关闭, 或者WEB应用被移出容器, 随着WEB应用的销毁, Servlet实例也会跟着销毁, 在销毁之前服务器会调用destroy方法进行善后的处理。</p>
+</blockquote>
+<h2 id="请求、转发、域对象"><a href="#请求、转发、域对象" class="headerlink" title="请求、转发、域对象"></a>请求、转发、域对象</h2><blockquote>
+<ol>
+<li>域对象：<br>&emsp;能够在指定的范围内, 利用自身的map实现数据的共享  </li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>请求转发：<br>&emsp;是指定服务器中的某一个资源（Servlet或JSP）在处理请求的过程中，将请求转发给一个其他的资源，让其他资源来处理请求转发只能在同一个Web应用内部的两个资源之间进行跳转, 不可以是不同的Web应用或者不同的服务器中进行跳转,请求转发是一次请求，一次响应，转发前后地址栏地址不会发生变化  </li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>重定向：<br>&emsp;是指当用户浏览某个网址时，将其导向到另一个网址的技术。重定向和定时刷新都是两次请求两次响应，重定向和定时刷新前后，地址栏地址都会发生变化</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li>总结:<br>定时刷新和重定向都是两次请求, 两次响应<br>定时刷新和重定向跳转前后, 地址栏地址都会发生变化。<br>定时刷新和重定向在跳转时没有限制, 既可以在同一个Web应用内部的资源之间进行跳转, 也可以在不同的Web应用或者不同的主机之间进行跳转<br>定时刷新和重定向不同的是, 重定向是立即跳转, 中间没有时间间隔, 而定时刷新可以指定多少秒之后再进行跳转, 在跳转之前, 可以输出内容到浏览器, 提示用户。</li>
+</ol>
+</blockquote>
+<h3 id="EL表达式的作用"><a href="#EL表达式的作用" class="headerlink" title="EL表达式的作用:"></a>EL表达式的作用:</h3><blockquote>
+<p>&emsp;在Web开发中, 实现很多功能的时候, 都是由Servlet接收请求、处理请求，但是处理的结果应该交给JSP显示，此时我们可以在Servlet中将请求处理的结果存入request域中，再通过转发将Request域带到JSP中，再通过EL表达式将request域中的数据取出来, 显示在网页上.</p>
+</blockquote>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #7b7c7d; font-size:15px;">——————————&nbsp;本文结束&nbsp;<i class="fa fa-paw"></i>&nbsp;感谢您的阅读&nbsp;——————————</div>
+    
+</div>
+      
+    </div>
+    
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag"><i class="fa fa-tag"></i>基础知识</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/08/Jdbc%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" rel="next" title="JDBC知识总结">
+                <i class="fa fa-chevron-left"></i> JDBC知识总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/06/Http%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="prev" title="Http协议基础知识">
+                Http协议基础知识 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -322,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -410,6 +626,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Servlet"><span class="nav-number">1.</span> <span class="nav-text">Servlet</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet概述"><span class="nav-number">1.1.</span> <span class="nav-text">Servlet概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet的作用"><span class="nav-number">1.2.</span> <span class="nav-text">Servlet的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet调用过程"><span class="nav-number">1.3.</span> <span class="nav-text">Servlet调用过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Servlet生命周期"><span class="nav-number">1.4.</span> <span class="nav-text">Servlet生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请求、转发、域对象"><span class="nav-number">1.5.</span> <span class="nav-text">请求、转发、域对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#EL表达式的作用"><span class="nav-number">1.5.1.</span> <span class="nav-text">EL表达式的作用:</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
