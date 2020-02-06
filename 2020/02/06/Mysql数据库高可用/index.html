@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="mysql," />
+  <meta name="keywords" content="基础知识,mysql," />
 
 
 
@@ -81,17 +81,23 @@
 
 
 
-<meta name="description" content="数据库备份策略冷备份策略 说明:定期将数据库文件进行转储.缺点:  数据库冷备份,则需要手动的人工完成.效率低 定期数据备份,不能保证数据的安全的.仅仅能够恢复部分数据. 如果数据量比较庞大,导入导出时耗费的时间较多. 由于网络传输问题.可能会导致备份多次.优点:   数据库冷备份是恢复数据最后有效的手段.">
+<meta name="description" content="数据库备份策略冷备份策略 说明：定期将数据库文件进行转储.缺点：&amp;emsp;1.数据库冷备份，则需要手动的人工完成.效率低&amp;emsp;2.定期数据备份，不能保证数据的安全的.仅仅能够恢复部分数据&amp;emsp;3.如果数据量比较庞大，导入导出时耗费的时间较多&amp;emsp;4.由于网络传输问题.可能会导致备份多次优点：数据库冷备份是恢复数据最后有效的手段.  热备份策略 说明： 当主数据库数据进行”更新”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mysql数据库高可用">
 <meta property="og:url" content="https://courage-kevin.github.io/2020/02/06/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E9%AB%98%E5%8F%AF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Courage-Kevin 个人博客">
-<meta property="og:description" content="数据库备份策略冷备份策略 说明:定期将数据库文件进行转储.缺点:  数据库冷备份,则需要手动的人工完成.效率低 定期数据备份,不能保证数据的安全的.仅仅能够恢复部分数据. 如果数据量比较庞大,导入导出时耗费的时间较多. 由于网络传输问题.可能会导致备份多次.优点:   数据库冷备份是恢复数据最后有效的手段.">
-<meta property="article:published_time" content="2020-02-06T10:43:25.000Z">
-<meta property="article:modified_time" content="2020-02-06T10:45:10.289Z">
+<meta property="og:description" content="数据库备份策略冷备份策略 说明：定期将数据库文件进行转储.缺点：&amp;emsp;1.数据库冷备份，则需要手动的人工完成.效率低&amp;emsp;2.定期数据备份，不能保证数据的安全的.仅仅能够恢复部分数据&amp;emsp;3.如果数据量比较庞大，导入导出时耗费的时间较多&amp;emsp;4.由于网络传输问题.可能会导致备份多次优点：数据库冷备份是恢复数据最后有效的手段.  热备份策略 说明： 当主数据库数据进行”更新”">
+<meta property="og:image" content="https://courage-kevin.github.io/images/databasecopy.jpg">
+<meta property="og:image" content="https://courage-kevin.github.io/images/amoeba.png">
+<meta property="og:image" content="https://courage-kevin.github.io/images/mycat.png">
+<meta property="og:image" content="https://courage-kevin.github.io/images/%E6%8B%86%E5%88%86%E7%AD%96%E7%95%A5.png">
+<meta property="article:published_time" content="2020-02-06T10:43:25.458Z">
+<meta property="article:modified_time" content="2020-02-06T11:31:01.595Z">
 <meta property="article:author" content="Courage-Kevin">
+<meta property="article:tag" content="基础知识">
 <meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://courage-kevin.github.io/images/databasecopy.jpg">
 
 
 
@@ -370,12 +376,90 @@
 
       
         <h1 id="数据库备份策略"><a href="#数据库备份策略" class="headerlink" title="数据库备份策略"></a>数据库备份策略</h1><h2 id="冷备份策略"><a href="#冷备份策略" class="headerlink" title="冷备份策略"></a>冷备份策略</h2><blockquote>
-<p>说明:定期将数据库文件进行转储.<br>缺点:</p>
+<p>说明：定期将数据库文件进行转储.<br>缺点：<br>&emsp;1.数据库冷备份，则需要手动的人工完成.效率低<br>&emsp;2.定期数据备份，不能保证数据的安全的.仅仅能够恢复部分数据<br>&emsp;3.如果数据量比较庞大，导入导出时耗费的时间较多<br>&emsp;4.由于网络传输问题.可能会导致备份多次<br>优点：数据库冷备份是恢复数据最后有效的手段.</p>
+</blockquote>
+<h2 id="热备份策略"><a href="#热备份策略" class="headerlink" title="热备份策略"></a>热备份策略</h2><blockquote>
+<p>说明： 当主数据库数据进行”更新”操作时，数据会自动的同步到slave(从数据库中)该操作可以实现数据实时备份。<br><img src="/images/databasecopy.jpg" alt="avatar"></p>
+</blockquote>
+<h2 id="数据备份原理"><a href="#数据备份原理" class="headerlink" title="数据备份原理"></a>数据备份原理</h2><blockquote>
 <ol>
-<li>数据库冷备份,则需要手动的人工完成.效率低</li>
-<li>定期数据备份,不能保证数据的安全的.仅仅能够恢复部分数据.</li>
-<li>如果数据量比较庞大,导入导出时耗费的时间较多.</li>
-<li>由于网络传输问题.可能会导致备份多次.<br>优点:   数据库冷备份是恢复数据最后有效的手段.</li>
+<li>当数据库主库发生数据改变时，会将改变的数据写入二进制日志文件中(主库)。</li>
+<li>从库中会启动IO线程会实时的监控主库的二进制文件是否发生改变.如果主库的二进制改变了，则将改变的数据进行读取.读取之后，将二进制内容写入中继日志中。</li>
+<li>从库会启动Sql线程.会读取中继日志中的消息，将它写入数据库中，最终实现数据同步。</li>
+</ol>
+</blockquote>
+<h2 id="数据库双机热备"><a href="#数据库双机热备" class="headerlink" title="数据库双机热备"></a>数据库双机热备</h2><blockquote>
+<p>  根据数据库主从的配置.当主数据库做更新操作时，从库复制备份数据.当主库宕机时，通过某些技术手段可以数据库的高可用，实现故障迁移.当用户再有写入操作时，应该将数据写入从库中.如果主库修复完成重启数据库时，主库发现从库的数据较多.则数据库备份将失效.最终导致数据不一致的问题.</p>
+</blockquote>
+<h3 id="双机热备意义"><a href="#双机热备意义" class="headerlink" title="双机热备意义"></a>双机热备意义</h3><blockquote>
+<p>说明：实现数据库双机热备是实现高可用的前提，如果数据不同步则无法实现数据库高可用.一般公司都有自己的运维团队.所以负责java开发的程序员不需要手动的配置数据库主从.但是需要了解mysql数据备份策略.为以后转岗做准备。</p>
+</blockquote>
+<h2 id="数据库读写分离"><a href="#数据库读写分离" class="headerlink" title="数据库读写分离"></a>数据库读写分离</h2><h3 id="Amoeba"><a href="#Amoeba" class="headerlink" title="Amoeba"></a>Amoeba</h3><blockquote>
+<h4 id="什么是amoeba"><a href="#什么是amoeba" class="headerlink" title="什么是amoeba?"></a>什么是amoeba?</h4><p>Amoeba是一个以MySQL为底层数据存储，并对应用提供MySQL协议接口的proxy。它集中地响应应用的请求，依据用户事先设置的规则，将SQL请求发送到特定的数据库上执行。基于此可以实现负载均衡、读写分离、高可用性等需求。与MySQL官方的MySQL Proxy相比，作者强调的是amoeba配置的方便（基于XML的配置文件，用SQLJEP语法书写规则，比基于lua脚本的MySQL Proxy简单）。</p>
+</blockquote>
+<blockquote>
+<p>Amoeba相当于一个SQL请求的路由器，目的是为负载均衡、读写分离、高可用性提供机制，而不是完全实现它们。用户需要结合使用MySQL的 Replication等机制来实现副本同步等功能。amoeba对底层数据库连接管理和路由实现也采用了可插拨的机制，第三方可以开发更高级的策略类来替代作者的实现。这个程序总体上比较符合KISS原则的思想。</p>
+</blockquote>
+<blockquote>
+<p>amoeba作用：<font color=red>可以实现数据库的读写操作分离，高可用。 (数据库分库分表中间件)</font><br>&nbsp; 需求分析： 如果所有的访问压力都访问一台mysql服务器.如果遇到高并发问题可能导致数据库服务器宕机影响整个服务.<br>&nbsp; 解决方案： 使用读写分离策略.提高数据库的执行效率，当用户有更新操作时，访问主数据库.当用户有读操作时访问从数据库.同时从数据库可以有多台.并且主从实现数据同步.实现读和写分离.高升数据库性能.<br><img src="/images/amoeba.png" alt="avatar"></p>
+</blockquote>
+<h3 id="Mycat"><a href="#Mycat" class="headerlink" title="Mycat"></a>Mycat</h3><blockquote>
+<h4 id="什么是Mycat"><a href="#什么是Mycat" class="headerlink" title="什么是Mycat"></a>什么是Mycat</h4><p>官网copy了一份：</p>
+<ol>
+<li>一个彻底开源的，面向企业应用开发的大数据库集群</li>
+<li>支持事务、ACID、可以替代MySQL的加强版数据库</li>
+<li>一个可以视为MySQL集群的企业级数据库，用来替代昂贵的Oracle集群</li>
+<li>一个融合内存缓存技术、NoSQL技术、HDFS大数据的新型SQL Server</li>
+<li>结合传统数据库和新型分布式数据仓库的新一代企业级数据库产品</li>
+<li>一个新颖的数据库中间件产品  </li>
+</ol>
+</blockquote>
+<blockquote>
+<p>Mycat作用：<font color=red>能满足数据库数据大量存储， 提高了查询性能 (数据库分库分表中间件)</font>  </p>
+</blockquote>
+<p><img src="/images/mycat.png" alt="avatar"></p>
+<blockquote>
+<p>Mycat工作原理说明：</p>
+<ol>
+<li>后台服务器需要将数据入库时通过mycat代理服务器操作数据库.</li>
+<li>如果是更新操作.则将数据发往主数据库，如果是读操作则将数据发送给从数据库或者空闲的主数据库.</li>
+<li>当主数据库发生宕机后，Mycat内部有心跳检测机制.判断主库宕机后，实现故障迁移.将所有的写库操作发往第二台主库.也就是从机.</li>
+<li>当运维人员修复主库后.Mycat还会将写操作发往主库.从而实现数据库高可用.</li>
+</ol>
+</blockquote>
+<h4 id="垂直拆分和水平拆分"><a href="#垂直拆分和水平拆分" class="headerlink" title="垂直拆分和水平拆分"></a>垂直拆分和水平拆分</h4><blockquote>
+<p>业务需求： 当公司的业务积累到一定量，数据库和数据表都有大量的数据，无论从运维/查询角度而言效率都很慢，这就是通常所说的数据库瓶颈问题。<br><font color=red>那么如何解决这一问题呢？ 核心思想：将大量的数据分别保存到不同的数据库和数据表中</font>。</p>
+</blockquote>
+<h4 id="数据拆分概念引入"><a href="#数据拆分概念引入" class="headerlink" title="数据拆分概念引入"></a>数据拆分概念引入</h4><blockquote>
+<h5 id="垂直拆分："><a href="#垂直拆分：" class="headerlink" title="垂直拆分："></a>垂直拆分：</h5><p>特点：根据不同的业务，将数据表拆分到不同的数据库中.<br>规定：如果有业务关联，则尽可能拆分到一个数据库中.  </p>
+<h5 id="水平拆分："><a href="#水平拆分：" class="headerlink" title="水平拆分："></a>水平拆分：</h5><p>特点：  按照数据量进行拆分，将一个表中的数据分别保存到不同的数据表中，分散存储  </p>
+</blockquote>
+<h4 id="使用Mycat实现数据库-1-高可用性-2-读写分离-3-负载均衡"><a href="#使用Mycat实现数据库-1-高可用性-2-读写分离-3-负载均衡" class="headerlink" title="使用Mycat实现数据库 1.高可用性 2.读写分离 3.负载均衡"></a>使用Mycat实现数据库 1.高可用性 2.读写分离 3.负载均衡</h4><blockquote>
+<h5 id="数据库垂直拆分"><a href="#数据库垂直拆分" class="headerlink" title="数据库垂直拆分"></a>数据库垂直拆分</h5></blockquote>
+<blockquote>
+<p>&nbsp;根据功能模块(业务)将一个数据库中的表，拆分为多个数据库.降低了数据库中的数据量.提高数据库效率</p>
+<ul>
+<li>优点：将数据表根据功能存放到不同的数据库中，可以提高数据库的性能。</li>
+<li>拆分策略：将具有关联意义的数据表尽可能保存到同一个数据库中.否则关联查询时不能正确关联.因为在不同的数据库中。  </li>
+</ul>
+</blockquote>
+<blockquote>
+<h5 id="数据表水平拆分"><a href="#数据表水平拆分" class="headerlink" title="数据表水平拆分"></a>数据表水平拆分</h5></blockquote>
+<blockquote>
+<p>&nbsp;由于单表数据表的量很大，造成了数据库查询的瓶颈.所以需要将数据表中的数据拆分到多个数据库中.降低单表的数据量。</p>
+<ul>
+<li>数据存取问题：由于使用数据库水平拆分，那么数据库中的数据应该按照什么规则存取呢?</li>
+<li>问题解决：Mycat对于数据水平拆分，指定了很多策略.课上介绍一种根据Id取模运算.</li>
+<li>原理说明：当信息入库时根据Id%分库数量=值.这个值就是数据存储的位置.同样当用户读取数据库时，也会取模快速定位数据库中的表.快速获取数据，如下图。<br><img src="/images/%E6%8B%86%E5%88%86%E7%AD%96%E7%95%A5.png" alt="avatar"></li>
+</ul>
+</blockquote>
+<h1 id="数据库优化策略-重点知识"><a href="#数据库优化策略-重点知识" class="headerlink" title="数据库优化策略(重点知识)"></a>数据库优化策略(重点知识)</h1><blockquote>
+<ol>
+<li>优化sql语句(多表操作)  where 左连接 右连接 内连接 原则:尽可能根据主键查询,尽可能少用关联查询.</li>
+<li>创建索引(对经常查询的数据创建索引)</li>
+<li>添加缓存(Redis/MemCache)</li>
+<li>定期进行数据转储(将一些查询较少的数据保存到历史表,让当前表维护可控的数据量)</li>
+<li>分库分表(需要大量的数据库服务器)</li>
 </ol>
 </blockquote>
 
@@ -404,6 +488,8 @@
     <footer class="post-footer">
       
         <div class="post-tags">
+          
+            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag"><i class="fa fa-tag"></i>基础知识</a>
           
             <a href="/tags/mysql/" rel="tag"><i class="fa fa-tag"></i>mysql</a>
           
@@ -585,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库备份策略"><span class="nav-number">1.</span> <span class="nav-text">数据库备份策略</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#冷备份策略"><span class="nav-number">1.1.</span> <span class="nav-text">冷备份策略</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库备份策略"><span class="nav-number">1.</span> <span class="nav-text">数据库备份策略</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#冷备份策略"><span class="nav-number">1.1.</span> <span class="nav-text">冷备份策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#热备份策略"><span class="nav-number">1.2.</span> <span class="nav-text">热备份策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据备份原理"><span class="nav-number">1.3.</span> <span class="nav-text">数据备份原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库双机热备"><span class="nav-number">1.4.</span> <span class="nav-text">数据库双机热备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#双机热备意义"><span class="nav-number">1.4.1.</span> <span class="nav-text">双机热备意义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库读写分离"><span class="nav-number">1.5.</span> <span class="nav-text">数据库读写分离</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Amoeba"><span class="nav-number">1.5.1.</span> <span class="nav-text">Amoeba</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是amoeba"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">什么是amoeba?</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mycat"><span class="nav-number">1.5.2.</span> <span class="nav-text">Mycat</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是Mycat"><span class="nav-number">1.5.2.1.</span> <span class="nav-text">什么是Mycat</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#垂直拆分和水平拆分"><span class="nav-number">1.5.2.2.</span> <span class="nav-text">垂直拆分和水平拆分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据拆分概念引入"><span class="nav-number">1.5.2.3.</span> <span class="nav-text">数据拆分概念引入</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#垂直拆分："><span class="nav-number">1.5.2.3.1.</span> <span class="nav-text">垂直拆分：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#水平拆分："><span class="nav-number">1.5.2.3.2.</span> <span class="nav-text">水平拆分：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用Mycat实现数据库-1-高可用性-2-读写分离-3-负载均衡"><span class="nav-number">1.5.2.4.</span> <span class="nav-text">使用Mycat实现数据库 1.高可用性 2.读写分离 3.负载均衡</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#数据库垂直拆分"><span class="nav-number">1.5.2.4.1.</span> <span class="nav-text">数据库垂直拆分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#数据表水平拆分"><span class="nav-number">1.5.2.4.2.</span> <span class="nav-text">数据表水平拆分</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库优化策略-重点知识"><span class="nav-number">2.</span> <span class="nav-text">数据库优化策略(重点知识)</span></a></li></ol></div>
             
 
           </div>
