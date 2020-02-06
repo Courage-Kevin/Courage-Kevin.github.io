@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="基础知识," />
+  <meta name="keywords" content="基础知识,redis," />
 
 
 
@@ -81,17 +81,21 @@
 
 
 
-<meta name="description" content="JDBC：概念：Java DataBase Connectivity JDBC( Java DataBase Connectivity ) 翻译过来就是Java数据库连接，其实就是通过Java语言操作数据库的一门技术。  JDBC由来 由于数据库厂商提供的数据库驱动（操作数据库的jar包）各不相同，导致开发人员的学习成本十分的高。因此SUN公司提出了JDBC这套规范，用来统一访问数据的标准。JDB">
+<meta name="description" content="RedisRedis官方简介 Redis是一个开源（BSD许可），采用key-value结构进行数据存储，用作数据库，缓存和消息队列。它支持数据结构，如字符串，散列，列表，集合，带有范围查询的排序集，位图，超级日志，具有半径查询和流的地理空间索引。Redis具有内置复制，Lua脚本，LRU算法，事务和不同级别的磁盘持久性，并通过Redis Sentinel提供高可用性并使用Redis Cluste">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JDBC知识总结">
-<meta property="og:url" content="https://courage-kevin.github.io/2018/02/09/Jdbc%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="Redis基础知识">
+<meta property="og:url" content="https://courage-kevin.github.io/2020/02/06/Redis%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="Courage-Kevin 个人博客">
-<meta property="og:description" content="JDBC：概念：Java DataBase Connectivity JDBC( Java DataBase Connectivity ) 翻译过来就是Java数据库连接，其实就是通过Java语言操作数据库的一门技术。  JDBC由来 由于数据库厂商提供的数据库驱动（操作数据库的jar包）各不相同，导致开发人员的学习成本十分的高。因此SUN公司提出了JDBC这套规范，用来统一访问数据的标准。JDB">
-<meta property="article:published_time" content="2018-02-09T14:10:05.000Z">
-<meta property="article:modified_time" content="2020-02-06T09:52:24.628Z">
+<meta property="og:description" content="RedisRedis官方简介 Redis是一个开源（BSD许可），采用key-value结构进行数据存储，用作数据库，缓存和消息队列。它支持数据结构，如字符串，散列，列表，集合，带有范围查询的排序集，位图，超级日志，具有半径查询和流的地理空间索引。Redis具有内置复制，Lua脚本，LRU算法，事务和不同级别的磁盘持久性，并通过Redis Sentinel提供高可用性并使用Redis Cluste">
+<meta property="og:image" content="https://courage-kevin.github.io/images/redishash.png">
+<meta property="og:image" content="https://courage-kevin.github.io/images/%E5%9D%87%E8%A1%A1%E6%80%A7.png">
+<meta property="article:published_time" content="2020-02-06T11:32:12.000Z">
+<meta property="article:modified_time" content="2020-02-06T12:10:53.894Z">
 <meta property="article:author" content="Courage-Kevin">
 <meta property="article:tag" content="基础知识">
+<meta property="article:tag" content="redis">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://courage-kevin.github.io/images/redishash.png">
 
 
 
@@ -121,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://courage-kevin.github.io/2018/02/09/Jdbc知识总结/"/>
+  <link rel="canonical" href="https://courage-kevin.github.io/2020/02/06/Redis基础知识/"/>
 
 
 
 
 
-  <title>JDBC知识总结 | Courage-Kevin 个人博客</title>
+  <title>Redis基础知识 | Courage-Kevin 个人博客</title>
   
 
 
@@ -278,7 +282,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2018/02/09/Jdbc%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2020/02/06/Redis%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Courage-Kevin">
@@ -295,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JDBC知识总结</h1>
+          <h1 class="post-title" itemprop="name headline">Redis基础知识</h1>
         
 
         <div class="post-meta">
@@ -307,8 +311,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-09T22:10:05+08:00">
-                2018-02-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-06T19:32:12+08:00">
+                2020-02-06
               </time>
             
 
@@ -332,8 +336,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Jdbc%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
-                    <span itemprop="name">Jdbc基础知识</span>
+                  <a href="/categories/Redis%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
+                    <span itemprop="name">Redis基础知识</span>
                   </a>
                 </span>
 
@@ -369,132 +373,147 @@
       
 
       
-        <h1 id="JDBC："><a href="#JDBC：" class="headerlink" title="JDBC："></a>JDBC：</h1><h2 id="概念：Java-DataBase-Connectivity"><a href="#概念：Java-DataBase-Connectivity" class="headerlink" title="概念：Java DataBase Connectivity"></a>概念：Java DataBase Connectivity</h2><blockquote>
-<p>JDBC( Java DataBase Connectivity ) 翻译过来就是Java数据库连接，其实就是通过Java语言操作数据库的一门技术。</p>
+        <h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><h2 id="Redis官方简介"><a href="#Redis官方简介" class="headerlink" title="Redis官方简介"></a>Redis官方简介</h2><blockquote>
+<p>Redis是一个开源（BSD许可），采用key-value结构进行数据存储，用作数据库，缓存和消息队列。它支持数据结构，如字符串，散列，列表，集合，带有范围查询的排序集，位图，超级日志，具有半径查询和流的地理空间索引。Redis具有内置复制，Lua脚本，LRU算法，事务和不同级别的磁盘持久性，并通过Redis Sentinel提供高可用性并使用Redis Cluster自动分区。</p>
 </blockquote>
-<h3 id="JDBC由来"><a href="#JDBC由来" class="headerlink" title="JDBC由来"></a>JDBC由来</h3><blockquote>
-<p>由于数据库厂商提供的数据库驱动（操作数据库的jar包）各不相同，导致开发人员的学习成本十分的高。因此SUN公司提出了JDBC这套规范，用来统一访问数据的标准。JDBC本质上是一套接口，SUN要求所有的数据库厂商在设计驱动时，都要实现JDBC这套标准。因此开发人员只要学会JDBC这套接口，所有的数据库驱动就都会使用了。</p>
-</blockquote>
-<h3 id="JDBC包的介绍"><a href="#JDBC包的介绍" class="headerlink" title="JDBC包的介绍"></a>JDBC包的介绍</h3><blockquote>
-<p>JDBC主要是由java.sql 和javax.sql包组成的，并且这两个包已经被集成到J2SE的规范中了，这意味着，只要一个普通的java程序就可以使用JDBC。需要注意的是，JDBC包中大部分都是接口，因此在开发数据库程序时，除了如上的两个包，还需要手动的导入具体的数据库驱动。</p>
-</blockquote>
-<h2 id="快速入门："><a href="#快速入门：" class="headerlink" title="快速入门："></a>快速入门：</h2><blockquote>
-<p>开发步骤：</p>
+<h2 id="人话版什么是Redis"><a href="#人话版什么是Redis" class="headerlink" title="人话版什么是Redis"></a>人话版什么是Redis</h2><blockquote>
 <ol>
-<li>导入驱动jar包 mysql-connector-java-5.1.37-bin.jar</li>
-<li>注册驱动</li>
-<li>获取数据库连接对象 Connection</li>
-<li>定义sql</li>
-<li>获取执行sql语句的对象 Statement</li>
-<li>执行sql，接受返回结果</li>
-<li>处理结果</li>
-<li>释放资源</li>
+<li>Redis就是一个数据库软件，作用是存储数据的。</li>
+<li>Redis是一个开源的，基于K-V进行存储的内存型数据库，可以用作数据库，缓存，和消息队列。</li>
+<li>Redis是一个Nosql（没有sql）非关系型数据库。</li>
+<li>Redis读写效率高，平均每秒10万读写。</li>
+<li>Redis支持丰富的数据类型String、Hash 、LIST 、Set 、SortedSet 有序集合。</li>
+<li>Redis中操作可以添加事务的支持。</li>
 </ol>
 </blockquote>
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1. 导入驱动jar包</span></span><br><span class="line"><span class="comment">//2.注册驱动</span></span><br><span class="line">Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line"><span class="comment">//3.获取数据库连接对象</span></span><br><span class="line">Connection conn = DriverManager.getConnection(<span class="string">"jdbc:mysql://localhost:3306/db3"</span>, <span class="string">"root"</span>, <span class="string">"root"</span>);</span><br><span class="line"><span class="comment">//4.定义sql语句</span></span><br><span class="line">String sql = <span class="string">"update account set balance = 500 where id = 1"</span>;</span><br><span class="line"><span class="comment">//5.获取执行sql的对象 Statement</span></span><br><span class="line">Statement stmt = conn.createStatement();</span><br><span class="line"><span class="comment">//6.执行sql</span></span><br><span class="line"><span class="keyword">int</span> count = stmt.executeUpdate(sql);</span><br><span class="line"><span class="comment">//7.处理结果</span></span><br><span class="line">System.out.println(count);</span><br><span class="line"><span class="comment">//8.释放资源</span></span><br><span class="line">stmt.close();</span><br><span class="line">conn.close();</span><br></pre></td></tr></table></figure>
-<h2 id="详解各个对象："><a href="#详解各个对象：" class="headerlink" title="详解各个对象："></a>详解各个对象：</h2><blockquote>
+<h2 id="应用的一些场景"><a href="#应用的一些场景" class="headerlink" title="应用的一些场景"></a>应用的一些场景</h2><blockquote>
+<p>比如京东前端页面，基本上都是查询的操作，涉及到删除，更新，添加的操作，用户一般涉及不到后端管理这一块的操作，所以我们只需要吧这些常用的查询数据存储到NoSQL数据库中，客户端可以直接请求NoSQL数据库，如果NoSQL数据库中没有用户需要的数据，就会到关系型数据库中去查找，如果查询到，就会将关系型数据库中的数据，在添加到NoSQL数据库，从而提升性能。</p>
+</blockquote>
+<h2 id="Redis-持久化策略-RDB模式和AOF模式"><a href="#Redis-持久化策略-RDB模式和AOF模式" class="headerlink" title="Redis 持久化策略 RDB模式和AOF模式"></a>Redis 持久化策略 RDB模式和AOF模式</h2><h3 id="什么是RDB模式"><a href="#什么是RDB模式" class="headerlink" title="什么是RDB模式"></a>什么是RDB模式</h3><p>RDB模式是通过保存数据库中的键值对来记录数据库的状态 ，每隔一段时间就会将数据写入(Snapshot)快照， 恢复时在将快照文件直接读到内存里。</p>
+<blockquote>
+<p>优点:</p>
 <ol>
-<li>DriverManager：驱动管理对象,用于注册驱动，告诉程序该使用哪一个数据库驱动jar,获取数据库连接。</li>
-<li>Connection：数据库连接对象:获取执行sql的对象,管理事务</li>
-<li>Statement：执行sql的对象            </li>
-<li>ResultSet：结果集对象,封装查询结果</li>
-<li>PreparedStatement：执行sql的对象<ol>
-<li>SQL注入问题：在拼接sql时，有一些sql的特殊关键字参与字符串的拼接。会造成安全性问题</li>
-<li>解决sql注入问题：使用PreparedStatement对象来解决</li>
-<li>预编译的SQL：参数使用?作为占位符</li>
-</ol>
-</li>
-</ol>
-</blockquote>
-<h2 id="SQL注入攻击："><a href="#SQL注入攻击：" class="headerlink" title="SQL注入攻击："></a>SQL注入攻击：</h2><blockquote>
-<p>&emsp; 由于后台的SQL语句是拼接而来的。其中的参数是由用户提交的，如果用户在提交参数时，在其中掺杂了一些SQL关键字或者特殊符号，就可能会导致SQL语句的语意发生变化。从而执行一些意外的操作。</p>
-</blockquote>
-<h2 id="防止SQL注入攻击"><a href="#防止SQL注入攻击" class="headerlink" title="防止SQL注入攻击"></a>防止SQL注入攻击</h2><blockquote>
-<p>&emsp; 使用PreparedStatement对象来替代Statement对象。PreparedStatement对象比Statement对象更安全，效率更高。</p>
-</blockquote>
-<h2 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h2><blockquote>
-<p>&emsp; 在开发中，所谓的池就是一个容器，来存储程序的中的数据.而数据库连接池就是用来存储数据库连接的池子，用于在整个程序中共享连接，减少连接开关的次数，实现连接的复用，从而提高程序执行的效率.</p>
-</blockquote>
-<h3 id="为什么要使用数据库连接池"><a href="#为什么要使用数据库连接池" class="headerlink" title="为什么要使用数据库连接池?"></a>为什么要使用数据库连接池?</h3><blockquote>
-<p>&emsp; 对于数据库来说，频繁的开关连接会非常的耗费资源，也会导致程序执行效率的低下。我们可以在程序中创建一个池子，在程序启动时就初始化一批连接放在连接池中，当用户需要连接时，就直接从池子中拿一个连接使用，当用完连接后，也不要将连接关闭，而是将连接还回池中，下一个用户需要连接时也是如此。这样可以减少链接开关的次数，从而提供程序执行的效率.</p>
-</blockquote>
-<h2 id="抽取JDBC工具类-：-JDBCUtils"><a href="#抽取JDBC工具类-：-JDBCUtils" class="headerlink" title="抽取JDBC工具类 ： JDBCUtils"></a>抽取JDBC工具类 ： JDBCUtils</h2><h3 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JDBCUtils</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String url;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String user;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String password;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> String driver;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 文件的读取，只需要读取一次即可拿到这些值。使用静态代码块</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">static</span>&#123;</span><br><span class="line">    <span class="comment">//读取资源文件，获取值。</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">//1. 创建Properties集合类。</span></span><br><span class="line">        Properties pro = <span class="keyword">new</span> Properties();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//获取src路径下的文件的方式---&gt;ClassLoader 类加载器</span></span><br><span class="line">        ClassLoader classLoader = JDBCUtils<span class="class">.<span class="keyword">class</span>.<span class="title">getClassLoader</span>()</span>;</span><br><span class="line">        URL res  = classLoader.getResource(<span class="string">"jdbc.properties"</span>);</span><br><span class="line">        String path = res.getPath();</span><br><span class="line">        System.out.println(path);<span class="comment">///D:/IdeaProjects/itcast/out/production/day04_jdbc/jdbc.properties</span></span><br><span class="line">        <span class="comment">//2. 加载文件</span></span><br><span class="line">        <span class="comment">// pro.load(new FileReader("D:\\IdeaProjects\\itcast\\day04_jdbc\\src\\jdbc.properties"));</span></span><br><span class="line">        pro.load(<span class="keyword">new</span> FileReader(path));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//3. 获取数据，赋值</span></span><br><span class="line">        url = pro.getProperty(<span class="string">"url"</span>);</span><br><span class="line">        user = pro.getProperty(<span class="string">"user"</span>);</span><br><span class="line">        password = pro.getProperty(<span class="string">"password"</span>);</span><br><span class="line">        driver = pro.getProperty(<span class="string">"driver"</span>);</span><br><span class="line">        <span class="comment">//4. 注册驱动</span></span><br><span class="line">        Class.forName(driver);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​    </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取连接</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> 连接对象</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">	</span><br><span class="line">    <span class="keyword">return</span> DriverManager.getConnection(url, user, password);</span><br><span class="line">&#125;</span><br><span class="line">	</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 释放资源</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> stmt</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> conn</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">(Statement stmt,Connection conn)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>( stmt != <span class="keyword">null</span>)&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            stmt.close();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">    <span class="keyword">if</span>( conn != <span class="keyword">null</span>)&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            conn.close();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​    </p>
-<pre><code class="java">    <span class="comment">/**</span>
-<span class="comment">     * 释放资源</span>
-<span class="comment">     * <span class="doctag">@param</span> stmt</span>
-<span class="comment">     * <span class="doctag">@param</span> conn</span>
-<span class="comment">     */</span>
-    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">(ResultSet rs,Statement stmt, Connection conn)</span></span>{
-        <span class="keyword">if</span>( rs != <span class="keyword">null</span>){
-            <span class="keyword">try</span> {
-                rs.close();
-            } <span class="keyword">catch</span> (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        <span class="keyword">if</span>( stmt != <span class="keyword">null</span>){
-            <span class="keyword">try</span> {
-                stmt.close();
-            } <span class="keyword">catch</span> (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        <span class="keyword">if</span>( conn != <span class="keyword">null</span>){
-            <span class="keyword">try</span> {
-                conn.close();
-            } <span class="keyword">catch</span> (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-}</code></pre>
-<h2 id="JDBC控制事务："><a href="#JDBC控制事务：" class="headerlink" title="JDBC控制事务："></a>JDBC控制事务：</h2><h3 id="什么是事务？"><a href="#什么是事务？" class="headerlink" title="什么是事务？"></a>什么是事务？</h3><blockquote>
-<p>   就是讲一堆sql绑定在一起执行，要么全部执行成功，要么全部都执行失败。   </p>
-</blockquote>
-<h3 id="事物的四大特性："><a href="#事物的四大特性：" class="headerlink" title="事物的四大特性："></a>事物的四大特性：</h3><blockquote>
-<ol>
-<li>原子性：事务中的所有操作是一个整体，不能在分割，要么全部执行成功，要么全部都执行失败！</li>
-<li>一致性：事务前后的业务数据保持不变。</li>
-<li>隔离性：事务之间是具有隔离的，一个事务不能访问另外一个事务正在执行的操作。</li>
-<li>持久性：事务一旦提交成功，数据的改变将会是永久的。  </li>
-</ol>
-</blockquote>
-<h3 id="事务的并发读问题："><a href="#事务的并发读问题：" class="headerlink" title="事务的并发读问题："></a>事务的并发读问题：</h3><blockquote>
-<ol>
-<li>脏读：在一个事务中读取到了另外一个事务未提交的数据。</li>
-<li>不可重复读：在一个事务中读取到了另一个事物已提交的数据，两次查询的结果不一致，（修改）操作。</li>
-<li>幻读：对同一张表的两次查询结果不一致（插入/删除）操作。  </li>
-</ol>
-</blockquote>
-<h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><blockquote>
-<ol>
-<li>读未提交：安全性最低，不能防止任何读并发问题，但是效率高。</li>
-<li>读已提交：安全性比<font color=red>读未提交</font>高，可以防止脏读，但是不能防止不可重复读，效率比<font color=red>读未提交</font>低。</li>
-<li>可重复读：安全性比<font color=red>读已提交</font>高，可以防止脏读和不可重复读，但是不能防止幻读，效率比<font color=red>读未提交</font>低。</li>
-<li>串行化：安全性高，可以防止一切并发读问题，效率最低，不使用这种隔离级别，因为效率太低。  </li>
-</ol>
-</blockquote>
-<h3 id="事务隔离级别"><a href="#事务隔离级别" class="headerlink" title="事务隔离级别"></a>事务隔离级别</h3><blockquote>
-<p>事务隔离级别分四个等级，在相同数据环境下，对数据执行相同的操作，设置不同的隔离级别，可能导致不同的结果。不同事务隔离级别能够解决的数据并发问题的能力也是不同的。</p>
-<ol>
-<li>READ UNCOMMITTED（读未提交数据）：安全级别最低, 可能出现任何事务并发问题(比如脏读、不可以重复读、幻读等) 性能最好。</li>
-<li>READ COMMITTED（读已提交数据）（Oracle默认）防止脏读，没有处理不可重复读，也没有处理幻读；性能比REPEATABLE READ好。     </li>
-<li>REPEATABLE READ（可重复读）（MySQL默认）防止脏读和不可重复读，不能处理幻读问题；性能比SERIALIZABLE好。 </li>
-<li>SERIALIZABLE（串行化）不会出现任何并发问题，因为它是对同一数据的访问是串行的，非并发访问的；性能最差。  </li>
+<li>RDB备份效率是最高的.  </li>
+<li>RDB是一个非常紧凑(compact)的文件，它保存了redis 在某个时间点上的数据集。这种文件非常适合用于进行备份和灾难恢复。</li>
+<li>生成RDB文件的时候，redis主进程会fork()一个子进程来处理所有保存工作，主进程不需要进行任何磁盘IO操作。</li>
+<li>RDB 在恢复大数据集时的速度比 AOF 的恢复速度要快。</li>
+<li>持久化文件大小可以控制.  </li>
 </ol>
 </blockquote>
 <blockquote>
-<p>MySQL的默认隔离级别为REPEATABLE READ，即可以防止脏读和不可重复读</p>
+<p>缺点:</p>
+<ol>
+<li>RDB方式数据没办法做到实时持久化/秒级持久化。如果需要持久化 ， 我们可以手动执行save或者BGsave命令 ， 频繁执行成本过高.</li>
+<li>RDB文件使用特定二进制格式保存，Redis版本迭代过程中有多个格式的RDB版本，存在老版本Redis服务无法兼容新版RDB格式的问题</li>
+<li>数据过于集中，所有数据都存储到一个文件中 ，一定时间内做一次备份，如果redis意外挂掉的话，就会丢失最后一次快照后的所有修改(数据有丢失)</li>
+<li>Redis作为数据库或者或者队列时不要使用RDB模式.  </li>
+</ol>
 </blockquote>
-<p>​            </p>
+<h3 id="什么是AOF模式"><a href="#什么是AOF模式" class="headerlink" title="什么是AOF模式"></a>什么是AOF模式</h3><p> AOF 是通过保存Redis服务器所执行的写命令来记录数据库状态， (set，sadd，lpush 三个命令保存到 AOF 文件中)。</p>
+<blockquote>
+<p>优点:</p>
+<ol>
+<li>监听Redis的日志文件，监听如果发现执行了修改，删除，新增命令，立即根据这条命令把数据持久化，</li>
+<li>AOF持久化方法提供多种的同步频率，默认是每秒同步一次 ， 可以保证数据的准确性. </li>
+</ol>
+</blockquote>
+<blockquote>
+<p>缺点:</p>
+<ol>
+<li>对于具有相同数据的的 Redis，AOF 文件通常会比 RDF 文件体积更大。</li>
+<li>虽然 AOF 提供了多种同步的频率，默认情况下，每秒同步一次的频率也具有较高的性能。但在 Redis 的负载较高时，RDB 比 AOF 具好更好的性能保证。</li>
+<li>AOF只是每次将执行命令追加到AOF文件中，RDB是用快照的形式来持久化整个Redis数据，理论上来讲，RDB模式比AOF模式更加健壮，并且AOF好像有一些BUG  </li>
+</ol>
+</blockquote>
+<blockquote>
+<p>AOF如何恢复数据:   重启 Redis 之后就会进行 AOF 文件的载入。异常修复命令：redis-check-aof –fix 进行修复</p>
+</blockquote>
+<h3 id="AOF-和-RDB-两种持久化方式，我们应该如何选择呢？"><a href="#AOF-和-RDB-两种持久化方式，我们应该如何选择呢？" class="headerlink" title="AOF 和 RDB 两种持久化方式，我们应该如何选择呢？"></a>AOF 和 RDB 两种持久化方式，我们应该如何选择呢？</h3><blockquote>
+<p>如果可以接受小时间内的数据丢失，使用RDB肯定是最好的选择，定时生成快照，便于数据库备份.并且RDB模式恢复数据集的速度比AOF模式恢复的速度要快，RDB还可以避免AOF一些隐藏的BUG.否则就用AOF重写.一般情况下不建议单独使用某一种持久化机制，应该两者结合使用.</p>
+</blockquote>
+<h2 id="Redis的回收策略（淘汰策略）"><a href="#Redis的回收策略（淘汰策略）" class="headerlink" title="Redis的回收策略（淘汰策略）"></a>Redis的回收策略（淘汰策略）</h2><blockquote>
+<ol>
+<li>volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰  </li>
+<li>volatile-ttl：从已设置过期时间的数据集（server.db[i].expires）中挑选将要过期的数据淘汰  </li>
+<li>volatile-random：从已设置过期时间的数据集（server.db[i].expires）中任意选择数据淘汰  </li>
+<li>allkeys-lru：从数据集（server.db[i].dict）中挑选最近最少使用的数据淘汰  </li>
+<li>allkeys-random：从数据集（server.db[i].dict）中任意选择数据淘汰 </li>
+<li>no-enviction（驱逐）：禁止驱逐数据</li>
+</ol>
+</blockquote>
+<h2 id="Redis-主从复制"><a href="#Redis-主从复制" class="headerlink" title="Redis-主从复制"></a>Redis-主从复制</h2><blockquote>
+<p>在不设置主从复制的情况下，我们对数据的操作都是在一台Redis服务器上进行操作的，也就是说读和写以及备份操作都是在一台Redis服务器上进行的，那么随着项目访问量的增加，对Redis服务器的操作也越加频繁，虽然Redis读写速度都很快，但是一定程度上也会造成一定的延时，那么为了解决访问量大的问题，通常会采取的一种方式是主从架构Master/Slave，Master 以写为主，Slave 以读为主，Master 主节点更新后根据配置，自动同步到从机Slave 节点。</p>
+</blockquote>
+<h2 id="Redis分片技术-主要实现扩容"><a href="#Redis分片技术-主要实现扩容" class="headerlink" title="Redis分片技术(主要实现扩容)"></a>Redis分片技术(主要实现扩容)</h2><blockquote>
+<ul>
+<li>思考：单台redis中使用的内存大小有限，默认的内存的大小为10M，如果使用时内存不足，如何处理?</li>
+<li>解决：采用分片方式 ， 准备多台redis.实现内存扩容.</li>
+<li>Redis分片的缺点:</li>
+</ul>
+<ol>
+<li>安全性不好，用户可以利用客户端直接set操作，修改数据。</li>
+<li>由于单调性的要求，节点只能增，不能减，如果redis节点宕机，整合服务不能运行. 分片没有实现高可用。</li>
+</ol>
+</blockquote>
+<h3 id="Hash一致性"><a href="#Hash一致性" class="headerlink" title="Hash一致性"></a>Hash一致性</h3><blockquote>
+<p>   角色: node(节点)   key<br>   内存:  node*n 实现内存扩容.<br><img src="/images/redishash.png" alt="avatar"></p>
+</blockquote>
+<h3 id="均衡性"><a href="#均衡性" class="headerlink" title="均衡性"></a>均衡性</h3><blockquote>
+<p>说明:尽可能的让节点均匀的保存数据.<br>问题:如果没有均衡性算法，则会导致数据负载不均.<br>解决方法:引入虚拟节点的概念.通过虚拟节点动态的平衡数据.<br><img src="/images/%E5%9D%87%E8%A1%A1%E6%80%A7.png" alt="avatar"></p>
+</blockquote>
+<h3 id="单调性"><a href="#单调性" class="headerlink" title="单调性"></a>单调性</h3><blockquote>
+<p>说明:当节点新增时，节点信息会动态的划分，实现数据的挂载.<br>原则:如果节点新增时，尽肯能的保证原有的数据保持不变!只平衡部分数据.<br>单调性中描述节点只能新增，不能减少，如果节点个数少了.则内存缺失.分片不能使用.</p>
+</blockquote>
+<h2 id="Redis-哨兵机制总结-主要实现高可用"><a href="#Redis-哨兵机制总结-主要实现高可用" class="headerlink" title="Redis-哨兵机制总结(主要实现高可用)"></a>Redis-哨兵机制总结(主要实现高可用)</h2><blockquote>
+<ol>
+<li>前提:数据必须同步，搭建redis主从.</li>
+<li>哨兵只会监听主机的状态，通过心跳机制进行检测 ping-pong。</li>
+<li>当哨兵发现主机3次都没有响应时，这时认为主机宕机.内部进行推选。</li>
+<li>当哨兵通过读取主机的配置文件，发现当前的主机中有2个从机.所以哨兵推选一台从机当做现在的主节点。</li>
+<li>当哨兵成功推选了从机当主节点时.哨兵会修改另外节点的配置文件.重新定义主从结构。</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>基于Redis主从复制这一机制，存在一个问题，因为主节点Master只有一个，一旦主节点挂掉之后，从节点没法担起主节点的任务，那么整个也无法运行。如果主节点挂掉之后，从节点能够自动变成主节点，那么问题就解决了，于是哨兵模式诞生了。哨兵模式就是不定时的用过心跳检测机制，对redis进行监控，若一台主机出现问题时，哨兵会自动将该主机下的某一个从机设置为新的主，、，并让其他从机和新主机建立主从关系。(内部是用的投票机制)</p>
+</blockquote>
+<blockquote>
+<p>PS：哨兵模式也存在单点故障问题，如果哨兵机器挂了，那么就无法进行监控了，解决办法是哨兵也建立集群，Redis哨兵模式是支持集群的。</p>
+</blockquote>
+<h2 id="Redis集群搭建"><a href="#Redis集群搭建" class="headerlink" title="Redis集群搭建"></a>Redis集群搭建</h2><blockquote>
+<h3 id="为什么要搭建Redis集群"><a href="#为什么要搭建Redis集群" class="headerlink" title="为什么要搭建Redis集群?"></a>为什么要搭建Redis集群?</h3><p>分析: Redis分片主要的功能实现redis内存扩容，哨兵主要实现了redis的高可用，而使用redis集群实现分片和哨兵的全部的功能。</p>
+</blockquote>
+<blockquote>
+<h3 id="脑裂现象"><a href="#脑裂现象" class="headerlink" title="脑裂现象 :"></a>脑裂现象 :</h3><p>由于在集群/推选机制中，长时间出现平票的结果.则容易出现脑裂的现象.从而导致整个推选机制出现问题(脑袋炸裂)<br>如何降低此现象的发生 : 增加主节点的数量!!  主节点的数量一般大于等于7</p>
+</blockquote>
+<blockquote>
+<h3 id="Redis集群高可用推选原理"><a href="#Redis集群高可用推选原理" class="headerlink" title="Redis集群高可用推选原理"></a>Redis集群高可用推选原理</h3><ol>
+<li>redis所有的节点都会保存redis集群中的全部主从状态信息，</li>
+<li>子节点之间可以互相通信，如果某个节点宕机，则其他节点会通过ping-pang检测机制检查该节点是否宕机。</li>
+<li>如果有一半的节点认为宕机，则认为主节点宕机，剩余的节点会进行推选，投票推选出链接主节点的从机，实现故障的迁移。</li>
+</ol>
+</blockquote>
+<h2 id="缓存三大问题"><a href="#缓存三大问题" class="headerlink" title="缓存三大问题"></a>缓存三大问题</h2><h3 id="1-缓存穿透"><a href="#1-缓存穿透" class="headerlink" title="1. 缓存穿透"></a>1. 缓存穿透</h3><blockquote>
+<ul>
+<li>条件:访问一个不存在的数据</li>
+<li>说明:当访问一个不存在的数据时，因为缓存中没有这个key，导致缓存形同虚设.最终访问后台数据库.但是数据库中没有该数据所以返回null.</li>
+<li>隐患:如果有人恶意频繁查询一个不存在的数据，可能会导致数据库负载高导致宕机。</li>
+<li>总结:业务系统访问一个不存在的数据，称之为缓存穿透。</li>
+</ul>
+</blockquote>
+<h3 id="2-缓存击穿"><a href="#2-缓存击穿" class="headerlink" title="2. 缓存击穿"></a>2. 缓存击穿</h3><blockquote>
+<ul>
+<li>条件:当缓存key失效/过期/未命中时，高并发访问该key。</li>
+<li>说明:如果给一个key设定了失效时间，当key失效时有一万的并发请求访问这个key，这时缓存失效，所有的请求都会访问后台数据库.称之为缓击穿。</li>
+<li>场景:微博热点消息访问量很大，如果该缓存失效则会直接访问后台数据库，导致数据库负载过高。  </li>
+</ul>
+</blockquote>
+<h3 id="3-缓存雪崩"><a href="#3-缓存雪崩" class="headerlink" title="3. 缓存雪崩"></a>3. 缓存雪崩</h3><blockquote>
+<ul>
+<li>前提:高并发访问，缓存命中较低或者失效时。</li>
+<li>说明:假设缓存都设定了失效时间，在同一时间内缓存大量失效，如果这时用户高并发访问，缓存命中率过低，导致全部的用户访问都会访问后台真实的数据库.</li>
+<li>场景:在高并发条件下，缓存动态更新时。</li>
+</ul>
+</blockquote>
 
       
     </div>
@@ -524,6 +543,8 @@
           
             <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag"><i class="fa fa-tag"></i>基础知识</a>
           
+            <a href="/tags/redis/" rel="tag"><i class="fa fa-tag"></i>redis</a>
+          
         </div>
       
 
@@ -535,8 +556,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/06/Java%E5%B8%B8%E7%94%A8API%E5%B0%8FDemo/" rel="next" title="Java常用API小Demo">
-                <i class="fa fa-chevron-left"></i> Java常用API小Demo
+              <a href="/2020/02/06/Mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E9%AB%98%E5%8F%AF%E7%94%A8/" rel="next" title="Mysql数据库高可用">
+                <i class="fa fa-chevron-left"></i> Mysql数据库高可用
               </a>
             
           </div>
@@ -545,8 +566,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/10/%E4%BC%9A%E8%AF%9D%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="prev" title="会话技术基础知识">
-                会话技术基础知识 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/02/06/Mycat%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" rel="prev" title="Mycat配置文件">
+                Mycat配置文件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -706,7 +727,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JDBC："><span class="nav-number">1.</span> <span class="nav-text">JDBC：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念：Java-DataBase-Connectivity"><span class="nav-number">1.1.</span> <span class="nav-text">概念：Java DataBase Connectivity</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDBC由来"><span class="nav-number">1.1.1.</span> <span class="nav-text">JDBC由来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JDBC包的介绍"><span class="nav-number">1.1.2.</span> <span class="nav-text">JDBC包的介绍</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速入门："><span class="nav-number">1.2.</span> <span class="nav-text">快速入门：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现："><span class="nav-number">1.2.1.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详解各个对象："><span class="nav-number">1.3.</span> <span class="nav-text">详解各个对象：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL注入攻击："><span class="nav-number">1.4.</span> <span class="nav-text">SQL注入攻击：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#防止SQL注入攻击"><span class="nav-number">1.5.</span> <span class="nav-text">防止SQL注入攻击</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库连接池"><span class="nav-number">1.6.</span> <span class="nav-text">数据库连接池</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要使用数据库连接池"><span class="nav-number">1.6.1.</span> <span class="nav-text">为什么要使用数据库连接池?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽取JDBC工具类-：-JDBCUtils"><span class="nav-number">1.7.</span> <span class="nav-text">抽取JDBC工具类 ： JDBCUtils</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现：-1"><span class="nav-number">1.7.1.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC控制事务："><span class="nav-number">1.8.</span> <span class="nav-text">JDBC控制事务：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是事务？"><span class="nav-number">1.8.1.</span> <span class="nav-text">什么是事务？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事物的四大特性："><span class="nav-number">1.8.2.</span> <span class="nav-text">事物的四大特性：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的并发读问题："><span class="nav-number">1.8.3.</span> <span class="nav-text">事务的并发读问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的隔离级别"><span class="nav-number">1.8.4.</span> <span class="nav-text">事务的隔离级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务隔离级别"><span class="nav-number">1.8.5.</span> <span class="nav-text">事务隔离级别</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Redis"><span class="nav-number">1.</span> <span class="nav-text">Redis</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis官方简介"><span class="nav-number">1.1.</span> <span class="nav-text">Redis官方简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人话版什么是Redis"><span class="nav-number">1.2.</span> <span class="nav-text">人话版什么是Redis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用的一些场景"><span class="nav-number">1.3.</span> <span class="nav-text">应用的一些场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis-持久化策略-RDB模式和AOF模式"><span class="nav-number">1.4.</span> <span class="nav-text">Redis 持久化策略 RDB模式和AOF模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是RDB模式"><span class="nav-number">1.4.1.</span> <span class="nav-text">什么是RDB模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是AOF模式"><span class="nav-number">1.4.2.</span> <span class="nav-text">什么是AOF模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AOF-和-RDB-两种持久化方式，我们应该如何选择呢？"><span class="nav-number">1.4.3.</span> <span class="nav-text">AOF 和 RDB 两种持久化方式，我们应该如何选择呢？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis的回收策略（淘汰策略）"><span class="nav-number">1.5.</span> <span class="nav-text">Redis的回收策略（淘汰策略）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis-主从复制"><span class="nav-number">1.6.</span> <span class="nav-text">Redis-主从复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis分片技术-主要实现扩容"><span class="nav-number">1.7.</span> <span class="nav-text">Redis分片技术(主要实现扩容)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hash一致性"><span class="nav-number">1.7.1.</span> <span class="nav-text">Hash一致性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#均衡性"><span class="nav-number">1.7.2.</span> <span class="nav-text">均衡性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单调性"><span class="nav-number">1.7.3.</span> <span class="nav-text">单调性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis-哨兵机制总结-主要实现高可用"><span class="nav-number">1.8.</span> <span class="nav-text">Redis-哨兵机制总结(主要实现高可用)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Redis集群搭建"><span class="nav-number">1.9.</span> <span class="nav-text">Redis集群搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要搭建Redis集群"><span class="nav-number">1.9.1.</span> <span class="nav-text">为什么要搭建Redis集群?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脑裂现象"><span class="nav-number">1.9.2.</span> <span class="nav-text">脑裂现象 :</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis集群高可用推选原理"><span class="nav-number">1.9.3.</span> <span class="nav-text">Redis集群高可用推选原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存三大问题"><span class="nav-number">1.10.</span> <span class="nav-text">缓存三大问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-缓存穿透"><span class="nav-number">1.10.1.</span> <span class="nav-text">1. 缓存穿透</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-缓存击穿"><span class="nav-number">1.10.2.</span> <span class="nav-text">2. 缓存击穿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-缓存雪崩"><span class="nav-number">1.10.3.</span> <span class="nav-text">3. 缓存雪崩</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
