@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://courage-kevin.github.io/"/>
-  <updated>2020-02-24T14:00:07.052Z</updated>
+  <updated>2020-02-27T15:52:18.532Z</updated>
   <id>https://courage-kevin.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Semver</title>
+    <link href="https://courage-kevin.github.io/2020/02/27/%E4%BB%80%E4%B9%88%E6%98%AFsemver/"/>
+    <id>https://courage-kevin.github.io/2020/02/27/%E4%BB%80%E4%B9%88%E6%98%AFsemver/</id>
+    <published>2020-02-27T15:19:23.000Z</published>
+    <updated>2020-02-27T15:52:18.532Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Semver-语义化版本"><a href="#Semver-语义化版本" class="headerlink" title="Semver 语义化版本"></a>Semver 语义化版本</h1><br>&emsp;今天学习小程序的时候听到这个技术名词，上网查了一下，做个总结，方便查阅。<h2 id="Semver-简介"><a href="#Semver-简介" class="headerlink" title="Semver 简介"></a>Semver 简介</h2><p>&emsp;semver 是<a href="https://semver.org/lang/zh-CN/" target="_blank" rel="noopener"><font color=blue>语义化版本</font></a>（Semantic Versioning）规范的一个实现，目前是由npm的团队维护，实现了版本和版本范围的解析、计算、比较。</p><h2 id="semver-的两个概念"><a href="#semver-的两个概念" class="headerlink" title="semver 的两个概念"></a>semver 的两个概念</h2><ul><li>固定版本：是指例如 0.4.1、1.2.7、1.2.4-beta.0 这样表示包的特定版本的字符串。</li><li>范围版本：是对满足特定规则的版本的一种表示，例如 1.2.3-2.3.4、1.x、^0.2、&gt;1.4.</li></ul><h2 id="版本号格式"><a href="#版本号格式" class="headerlink" title="版本号格式"></a>版本号格式</h2><p>&emsp; 主版本号[MAJOR].次版本号[MINOR].修订号[PATCH]，版本号递增规则如下:</p><ol><li>主版本号：当你做了不兼容的 API 修改。</li><li>次版本号：当你做了向下兼容的功能性新增，可以理解为Feature版本。</li><li>修订号：当你做了向下兼容的问题修正，可以理解为Bug fix版本。</li></ol><h2 id="先行版本号-Pre-release-Version"><a href="#先行版本号-Pre-release-Version" class="headerlink" title="先行版本号 (Pre-release Version)"></a>先行版本号 (Pre-release Version)</h2><p>&emsp; 先行版本号可以作为发布正式版之前的版本，格式是在修订版本号后面加上一个连接号（-），再加上一连串以点（.）分割的标识符，标识符可以由英文、数字和连接号（[0-9A-Za-z-]）组成。example：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.0</span>​​<span class="number">.0</span>-alpha   内部版本</span><br><span class="line"><span class="number">1.0</span><span class="number">.0</span>-alpha<span class="number">.1</span> 公测版本</span><br><span class="line"><span class="number">1.0</span><span class="number">.1</span>-rc      正式版本的候选版本(Release candiate)</span><br><span class="line"><span class="number">1.0</span><span class="number">.0</span><span class="number">-0.3</span><span class="number">.7</span></span><br><span class="line"><span class="number">1.0</span><span class="number">.0</span>-x<span class="number">.7</span>.z<span class="number">.92</span></span><br></pre></td></tr></table></figure><h2 id="版本发布准则"><a href="#版本发布准则" class="headerlink" title="版本发布准则"></a>版本发布准则</h2><ol><li>标准的版本号必须采用XYZ的格式，并且X、Y 和 Z 为非负的整数，禁止在数字前方补零，版本发布需要严格递增。例如：1.9.1 -&gt; 1.10.0 -&gt; 1.11.0。</li><li>某个软件版本发行后，任何修改都必须以新版本发行。</li><li>1.0.0 的版本号用于界定公共 API。当你的软件发布到了正式环境，或者有稳定的API时，就可以发布1.0.0版本了。</li><li>版本的优先层级指的是不同版本在排序时如何比较。判断优先层级时，必须把版本依序拆分为主版本号、次版本号、修订号及先行版本号后进行比较。</li></ol><h2 id="npm包依赖"><a href="#npm包依赖" class="headerlink" title="npm包依赖"></a>npm包依赖</h2><p>&emsp; 当执行npm install package -S 来安装三方包时，npm 会首先安装包的最新版本，然后将包名及版本号写入到 package.json 文件中。</p><p>比如，通过npm 安装 react 时：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="attr">"react"</span>: <span class="string">"~16.2.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>&emsp; 项目对包的依赖可以使用下面的 3 种方法来表示(假设当前版本号是 16.2.0):</p><ul><li>兼容模块新发布的补丁版本：~16.2.0、16.2.x、16.2</li><li>兼容模块新发布的小版本、补丁版本：^16.2.0、16.x、16</li><li>兼容模块新发布的大版本、小版本、补丁版本：*、x</li></ul><h2 id="npm包发布"><a href="#npm包发布" class="headerlink" title="npm包发布"></a>npm包发布</h2><p>&emsp; 通常我们发布一个包到npm仓库时，我们的做法是先修改 package.json 为某个版本，然后执行 npm publish 命令。手动修改版本号的做法建立在你对Semver规范特别熟悉的基础之上，否则可能会造成版本混乱。npm 考虑到了这点，它提供了相关的命令来让我们更好的遵从Semver规范：</p><ul><li>升级补丁版本号：npm version patch</li><li>升级小版本号：npm version minor</li><li>升级大版本号：npm version major</li></ul><blockquote><p>当执行 npm publish 时，会首先将当前版本发布到 npm registry，然后更新 dist-tags.latest 的值为新版本。<br>当执行 npm publish –tag=next 时，会首先将当前版本发布到 npm registry，并且更新 dist-tags.next 的值为新版本。这里的 next 可以是任意有意义的命名（比如：v1.x、v2.x 等等）<br>OK，现在你应该知道 npm install package@next时next代表的含义了吧  </p></blockquote><p><br><br></p><p>原作者地址：<a href="https://segmentfault.com/a/1190000014405355" target="_blank" rel="noopener">https://segmentfault.com/a/1190000014405355</a> 、 <a href="https://www.jianshu.com/p/a7490344044f" target="_blank" rel="noopener">https://www.jianshu.com/p/a7490344044f</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Semver-语义化版本&quot;&gt;&lt;a href=&quot;#Semver-语义化版本&quot; class=&quot;headerlink&quot; title=&quot;Semver 语义化版本&quot;&gt;&lt;/a&gt;Semver 语义化版本&lt;/h1&gt;&lt;br&gt;
+&amp;emsp;今天学习小程序的时候听到这个技术名词，上网查
+      
+    
+    </summary>
+    
+    
+      <category term="开发小知识" scheme="https://courage-kevin.github.io/categories/%E5%BC%80%E5%8F%91%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="semver" scheme="https://courage-kevin.github.io/tags/semver/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序开发</title>
