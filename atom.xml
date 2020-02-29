@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://courage-kevin.github.io/"/>
-  <updated>2020-02-27T15:52:18.532Z</updated>
+  <updated>2020-02-29T10:34:36.340Z</updated>
   <id>https://courage-kevin.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>组件设计原则</title>
+    <link href="https://courage-kevin.github.io/2020/02/29/%E7%BB%84%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
+    <id>https://courage-kevin.github.io/2020/02/29/%E7%BB%84%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</id>
+    <published>2020-02-29T09:20:12.000Z</published>
+    <updated>2020-02-29T10:34:36.340Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="组件设计原则总结"><a href="#组件设计原则总结" class="headerlink" title="组件设计原则总结"></a>组件设计原则总结</h1><h2 id="你必须在组件的灵活性和易用性-稳定之间做出一个选择，找到一个平衡点"><a href="#你必须在组件的灵活性和易用性-稳定之间做出一个选择，找到一个平衡点" class="headerlink" title="你必须在组件的灵活性和易用性/稳定之间做出一个选择，找到一个平衡点"></a>你必须在组件的灵活性和易用性/稳定之间做出一个选择，找到一个平衡点</h2><blockquote><p>越是灵活的组件，易用性就越差，简单说就是复杂性越高；而越是简单的组件，灵活性和定制型就不够。</p></blockquote><h2 id="组件的意义是什么？"><a href="#组件的意义是什么？" class="headerlink" title="组件的意义是什么？"></a>组件的意义是什么？</h2><blockquote><p>组件从三方面：样式、骨架、业务逻辑/行为 上对代码进行封装，方便我们在日后重用/复用样式，骨架和业务逻辑。</p></blockquote><h2 id="组件必须要提供给用户的几个特点和方法"><a href="#组件必须要提供给用户的几个特点和方法" class="headerlink" title="组件必须要提供给用户的几个特点和方法"></a>组件必须要提供给用户的几个特点和方法</h2><blockquote><p>组件必须允许用户通过某种方式对组件进行<code>自定义</code>,不能自定义的组件或者说自定义程度很弱的组件不是一个好的组件设计。<code>自定义</code>性通常包括：</p><ol><li>对样式的自定义</li><li>对骨架的自定义</li><li>对业务逻辑的自定义</li></ol></blockquote><blockquote><p>从现有的技术来讲，对于以上的自定义性来讲，微信小程序有以下几个方式来支持自定义。</p><ol><li>外部样式类（样式自定义）</li><li>Slot插槽（骨架自定义）</li><li>业务逻辑(Behaior行为)</li></ol></blockquote><blockquote><p>但是业务逻辑自定义也会面临两个问题</p><ol><li>Behaior依旧繁琐</li><li>组件的业务逻辑自定义从某种程度来讲，是伪命题</li></ol></blockquote><blockquote><p>为什么是伪命题？因为组件A之所以是组件A，而不是组件B，正是由于他自己独特的业务逻辑，如果业务逻辑改变了，那么组件A可能就不应该是组件A，所以组件对于业务逻辑的自定义性是有待探讨的。</p></blockquote><h4 id="怎么样设计通用的组件呢？"><a href="#怎么样设计通用的组件呢？" class="headerlink" title="怎么样设计通用的组件呢？"></a>怎么样设计通用的组件呢？</h4><p>试想一下我们如果需要使用第三方UI框架，每一个样式都需要你去定义，会不会就失去了使用UI框架的意义，为什么要去用UI框架，无非就是为了方便，不用重复造轮子，直接用现成的就好。</p><p>那如果针对我们自己的项目，需要自定义组件的时候，怎么根据第三方库设计出更加灵活通用的组件呢？</p><ol><li>设计出合理的默认值，样式默认值，插槽默认值。</li><li>能不固定元素高和宽，就不要将高和宽写死。</li></ol><p>待总结…..</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;组件设计原则总结&quot;&gt;&lt;a href=&quot;#组件设计原则总结&quot; class=&quot;headerlink&quot; title=&quot;组件设计原则总结&quot;&gt;&lt;/a&gt;组件设计原则总结&lt;/h1&gt;&lt;h2 id=&quot;你必须在组件的灵活性和易用性-稳定之间做出一个选择，找到一个平衡点&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+    
+    
+      <category term="UI框架" scheme="https://courage-kevin.github.io/tags/UI%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Semver</title>
