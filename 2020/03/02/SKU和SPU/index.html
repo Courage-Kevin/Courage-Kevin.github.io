@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Spring," />
+  <meta name="keywords" content="sku spu," />
 
 
 
@@ -81,17 +81,20 @@
 
 
 
-<meta name="description" content="Spring框架Spring框架简述 是企业级应用中的一个软件开发框架，是一个半成品。最大优势是更好的实现了资源的整合(整合mybatis，整合springmvc，整合Redis…)。Spring框架中最核心是:IOC控制反转、DI依赖注入、Bean工厂、SpringAOP面向切面、事物控制例如整合JDBC，MyBatis，Hibernate等框架资源以更好的简化应用软件开发，降低软件开发周期。">
+<meta name="description" content="SKU和SPU到底是个啥？ SKU(stock keeping unit):库存量单位 SPU(standard product unit):标准化产品单元  帮你去记忆，SKU和SPU的区别就是一个K，一个P的区别！英文和我一样记不住这么长单词的这么理解吧，K(库存)，P(product)所以SKU就是和库存相关的一个概念。    SKU装逼一点的说法，就是库存量单位。    用人话讲就是你上网">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring框架基础知识">
-<meta property="og:url" content="https://courage-kevin.github.io/2018/03/12/Spring%E6%A1%86%E6%9E%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:title" content="SKU和SPU">
+<meta property="og:url" content="https://courage-kevin.github.io/2020/03/02/SKU%E5%92%8CSPU/index.html">
 <meta property="og:site_name" content="Courage-Kevin 个人博客">
-<meta property="og:description" content="Spring框架Spring框架简述 是企业级应用中的一个软件开发框架，是一个半成品。最大优势是更好的实现了资源的整合(整合mybatis，整合springmvc，整合Redis…)。Spring框架中最核心是:IOC控制反转、DI依赖注入、Bean工厂、SpringAOP面向切面、事物控制例如整合JDBC，MyBatis，Hibernate等框架资源以更好的简化应用软件开发，降低软件开发周期。">
-<meta property="article:published_time" content="2018-03-12T12:05:41.000Z">
-<meta property="article:modified_time" content="2020-02-07T12:23:33.625Z">
+<meta property="og:description" content="SKU和SPU到底是个啥？ SKU(stock keeping unit):库存量单位 SPU(standard product unit):标准化产品单元  帮你去记忆，SKU和SPU的区别就是一个K，一个P的区别！英文和我一样记不住这么长单词的这么理解吧，K(库存)，P(product)所以SKU就是和库存相关的一个概念。    SKU装逼一点的说法，就是库存量单位。    用人话讲就是你上网">
+<meta property="og:image" content="https://courage-kevin.github.io/images/sku.png">
+<meta property="og:image" content="https://courage-kevin.github.io/images/spu.png">
+<meta property="article:published_time" content="2020-03-02T14:29:53.000Z">
+<meta property="article:modified_time" content="2020-03-02T14:58:24.363Z">
 <meta property="article:author" content="Courage-Kevin">
-<meta property="article:tag" content="Spring">
+<meta property="article:tag" content="sku spu">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://courage-kevin.github.io/images/sku.png">
 
 
 
@@ -121,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://courage-kevin.github.io/2018/03/12/Spring框架基础知识/"/>
+  <link rel="canonical" href="https://courage-kevin.github.io/2020/03/02/SKU和SPU/"/>
 
 
 
 
 
-  <title>Spring框架基础知识 | Courage-Kevin 个人博客</title>
+  <title>SKU和SPU | Courage-Kevin 个人博客</title>
   
 
 
@@ -278,7 +281,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2018/03/12/Spring%E6%A1%86%E6%9E%B6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2020/03/02/SKU%E5%92%8CSPU/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Courage-Kevin">
@@ -295,7 +298,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Spring框架基础知识</h1>
+          <h1 class="post-title" itemprop="name headline">SKU和SPU</h1>
         
 
         <div class="post-meta">
@@ -307,8 +310,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-12T20:05:41+08:00">
-                2018-03-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-02T22:29:53+08:00">
+                2020-03-02
               </time>
             
 
@@ -319,28 +322,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Spring%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index">
-                    <span itemprop="name">Spring框架</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -369,56 +350,17 @@
       
 
       
-        <h1 id="Spring框架"><a href="#Spring框架" class="headerlink" title="Spring框架"></a>Spring框架</h1><h2 id="Spring框架简述"><a href="#Spring框架简述" class="headerlink" title="Spring框架简述"></a>Spring框架简述</h2><blockquote>
-<p>是企业级应用中的一个软件开发框架，是一个半成品。最大优势是更好的实现了资源的整合(整合mybatis，整合springmvc，整合Redis…)。Spring框架中最核心是:IOC控制反转、DI依赖注入、Bean工厂、SpringAOP面向切面、事物控制例如整合JDBC，MyBatis，Hibernate等框架资源以更好的简化应用软件开发，降低软件开发周期。  </p>
-</blockquote>
-<blockquote>
-<p>Spring的目的：就是让对象与对象之间的关系没有通过代码来关联，都是通过配置类说明管理的。<br>Spring就是一个容器，凡是在容器里的对象才会有Spring所提供的这些服务和功能。<br>Spring里用的最经典的一个设计模式就是模板方法模式。</p>
-</blockquote>
-<h2 id="Spring核心架构："><a href="#Spring核心架构：" class="headerlink" title="Spring核心架构："></a>Spring核心架构：</h2><blockquote>
-<ul>
-<li>Spring Core：spring的核心容器，提供Spring框架的基本功能。核心容器的主要组件是BeanFactory，它是工厂模式的实现。BeanFactory 使用控制反转（IOC）模式，将应用程序的配置和依赖性规范与实际的应用程序代码分开  </li>
+        <h1 id="SKU和SPU到底是个啥？"><a href="#SKU和SPU到底是个啥？" class="headerlink" title="SKU和SPU到底是个啥？"></a>SKU和SPU到底是个啥？</h1><ul>
+<li>SKU(stock keeping unit):库存量单位</li>
+<li>SPU(standard product unit):标准化产品单元</li>
 </ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Spring Context：Spring上下文，是一个配置文件，向 Spring 框架提供上下文信息。Spring 上下文包括企业服务，例如 JNDI、EJB、电子邮件、国际化、校验和调度功能。  </li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Spring AOP：通过配置管理特性，Spring AOP 模块直接将面向切面的编程功能集成到了 Spring 框架中。可以很容易地使 Spring框架管理的任何对象支持AOP。Spring AOP模块为基于Spring 的应用程序中的对象提供了事务管理服务。通过使用Spring AOP，就可以将声明性事务管理集成到应用程序中。  </li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Spring DAO：JDBC DAO 抽象层提供了有意义的异常层次结构，可用该结构来管理异常处理和不同数据库供应商抛出的错误消息。异常层次结构简化了错误处理，并且极大地降低了需要编写的异常代码数量（例如打开和关闭连接）。Spring DAO 的面向 JDBC 的异常遵从通用的 DAO 异常层次结构。  </li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Spring ORM：Spring 框架插入了若干个 ORM 框架，从而提供了 ORM 的对象关系工具，其中包括JDO、Hibernate和iBatis SQL Map。所有这些都遵从 Spring 的通用事务和 DAO 异常层次结构。  </li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Spring Web：Web上下文模块建立在应用程序上下文模块之上，为基于Web 的应用程序提供了上下文。所以Spring 框架支持与Jakarta Struts的集成。Web模块还简化了处理多部分请求以及将请求参数绑定到域对象的工作。  </li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>Spring MVC：    MVC 框架是一个全功能的构建 Web 应用程序的 MVC 实现。通过策略接口，MVC 框架变成为高度可配置的，MVC 容纳了大量视图技术，其中包括 JSP、Velocity、Tiles、iText 和 POI。</li>
-</ul>
-</blockquote>
-<h2 id="Spring-核心组件："><a href="#Spring-核心组件：" class="headerlink" title="Spring 核心组件："></a>Spring 核心组件：</h2><blockquote>
-<ul>
-<li>BeanFactory：Spring内部使用，创建bean的工厂。</li>
-<li>ApplicationContext：外部应用程序调用，也成为spring容器的上下文。</li>
-<li>IoC控制反转：开发者在无需自己new对象，无需关心对象的创建过程。</li>
-<li>DI依赖注入：松耦合方式实现对象之间的依赖</li>
-<li>AOP：面向切面编程,补充java面向对象的不足</li>
-</ul>
-</blockquote>
+<p><strong>帮你去记忆，SKU和SPU的区别就是一个K，一个P的区别！</strong><br>英文和我一样记不住这么长单词的这么理解吧，K(库存)，P(product)所以SKU就是和库存相关的一个概念。   </p>
+<h2 id="SKU"><a href="#SKU" class="headerlink" title="SKU"></a>SKU</h2><p>装逼一点的说法，就是库存量单位。   </p>
+<p>用人话讲就是你上网买东西，是不是要先确定买什么商品？选好商品后再来机型、再选自己喜欢的颜色、配置、尺寸等等等，等选好后你发现，你要的这个颜色的机型没货了…..   </p>
+<p>话说到这里大家应该知道什么是SKU了吗？其实就是电商重通过商品不同的属性，来计算库存，同一件商品搭配不同的属性，就会有很多很多种组合，这些组合，称之为SKU。一台mac有灰色、白色、这就是两个SKU。 对照下图自己脑补… 有多少种组合就有多少个SKU。可以找些女装商品去试试…数清楚有多少种组合了，你就彻底知道什么叫SKU了。<br><img src="/images/sku.png" alt="avatar">  </p>
+<h2 id="SPU"><a href="#SPU" class="headerlink" title="SPU"></a>SPU</h2><p>装逼一点的说法，就是标准化产品单元</p>
+<p>用人话讲，就是商品，只是这个商品加了一个标准化，还是用刚刚的例子，比如你要去买一个手机，你能确定是买苹果，还是买华为？华为Mate10、华为Mate20、iphone100 plus、iphone250 plus、这些都叫标准化产品，即华为、苹果是一个品牌，加上具体的机型，就是一个SPU，你不能说华为手机就是一个SPU，而是要加上确切的型号，组合成一个SPU，你上网买手机，你选的iphone100plus，人给你发个iphone5你乐意吗？不都是苹果手机吗？（杠精别说话…）不乐意吧。所以一个商品加上标准的型号，就可以称之为一个SPU，而加上颜色，内存大小、送手机壳、送充电器、等等这些又可以组合成多个SKU。了解了吗？<br><img src="/images/spu.png" alt="avatar">  </p>
+<p>总结：<br>    SKU，确定库存、多重组合<br>    SPU，单个商品，具体型号，组成一个单品。</p>
 
       
     </div>
@@ -446,7 +388,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Spring/" rel="tag"><i class="fa fa-tag"></i>Spring</a>
+            <a href="/tags/sku-spu/" rel="tag"><i class="fa fa-tag"></i>sku spu</a>
           
         </div>
       
@@ -459,8 +401,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/09/Nginx%E6%89%A9%E5%B1%95%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" rel="next" title="Nginx扩展知识总结">
-                <i class="fa fa-chevron-left"></i> Nginx扩展知识总结
+              <a href="/2020/02/29/%E7%BB%84%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/" rel="next" title="组件设计原则">
+                <i class="fa fa-chevron-left"></i> 组件设计原则
               </a>
             
           </div>
@@ -468,10 +410,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/06/%E6%95%B0%E6%8D%AE%E5%BA%93Mysql%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="prev" title="数据库Mysql基础知识">
-                数据库Mysql基础知识 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -630,7 +568,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring框架"><span class="nav-number">1.</span> <span class="nav-text">Spring框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring框架简述"><span class="nav-number">1.1.</span> <span class="nav-text">Spring框架简述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring核心架构："><span class="nav-number">1.2.</span> <span class="nav-text">Spring核心架构：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-核心组件："><span class="nav-number">1.3.</span> <span class="nav-text">Spring 核心组件：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SKU和SPU到底是个啥？"><span class="nav-number">1.</span> <span class="nav-text">SKU和SPU到底是个啥？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SKU"><span class="nav-number">1.1.</span> <span class="nav-text">SKU</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SPU"><span class="nav-number">1.2.</span> <span class="nav-text">SPU</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://courage-kevin.github.io/"/>
-  <updated>2020-02-29T10:34:36.340Z</updated>
+  <updated>2020-03-02T14:58:24.363Z</updated>
   <id>https://courage-kevin.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SKU和SPU</title>
+    <link href="https://courage-kevin.github.io/2020/03/02/SKU%E5%92%8CSPU/"/>
+    <id>https://courage-kevin.github.io/2020/03/02/SKU%E5%92%8CSPU/</id>
+    <published>2020-03-02T14:29:53.000Z</published>
+    <updated>2020-03-02T14:58:24.363Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="SKU和SPU到底是个啥？"><a href="#SKU和SPU到底是个啥？" class="headerlink" title="SKU和SPU到底是个啥？"></a>SKU和SPU到底是个啥？</h1><ul><li>SKU(stock keeping unit):库存量单位</li><li>SPU(standard product unit):标准化产品单元</li></ul><p><strong>帮你去记忆，SKU和SPU的区别就是一个K，一个P的区别！</strong><br>英文和我一样记不住这么长单词的这么理解吧，K(库存)，P(product)所以SKU就是和库存相关的一个概念。   </p><h2 id="SKU"><a href="#SKU" class="headerlink" title="SKU"></a>SKU</h2><p>装逼一点的说法，就是库存量单位。   </p><p>用人话讲就是你上网买东西，是不是要先确定买什么商品？选好商品后再来机型、再选自己喜欢的颜色、配置、尺寸等等等，等选好后你发现，你要的这个颜色的机型没货了…..   </p><p>话说到这里大家应该知道什么是SKU了吗？其实就是电商重通过商品不同的属性，来计算库存，同一件商品搭配不同的属性，就会有很多很多种组合，这些组合，称之为SKU。一台mac有灰色、白色、这就是两个SKU。 对照下图自己脑补… 有多少种组合就有多少个SKU。可以找些女装商品去试试…数清楚有多少种组合了，你就彻底知道什么叫SKU了。<br><img src="/images/sku.png" alt="avatar">  </p><h2 id="SPU"><a href="#SPU" class="headerlink" title="SPU"></a>SPU</h2><p>装逼一点的说法，就是标准化产品单元</p><p>用人话讲，就是商品，只是这个商品加了一个标准化，还是用刚刚的例子，比如你要去买一个手机，你能确定是买苹果，还是买华为？华为Mate10、华为Mate20、iphone100 plus、iphone250 plus、这些都叫标准化产品，即华为、苹果是一个品牌，加上具体的机型，就是一个SPU，你不能说华为手机就是一个SPU，而是要加上确切的型号，组合成一个SPU，你上网买手机，你选的iphone100plus，人给你发个iphone5你乐意吗？不都是苹果手机吗？（杠精别说话…）不乐意吧。所以一个商品加上标准的型号，就可以称之为一个SPU，而加上颜色，内存大小、送手机壳、送充电器、等等这些又可以组合成多个SKU。了解了吗？<br><img src="/images/spu.png" alt="avatar">  </p><p>总结：<br>    SKU，确定库存、多重组合<br>    SPU，单个商品，具体型号，组成一个单品。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;SKU和SPU到底是个啥？&quot;&gt;&lt;a href=&quot;#SKU和SPU到底是个啥？&quot; class=&quot;headerlink&quot; title=&quot;SKU和SPU到底是个啥？&quot;&gt;&lt;/a&gt;SKU和SPU到底是个啥？&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;SKU(stock keeping un
+      
+    
+    </summary>
+    
+    
+    
+      <category term="sku spu" scheme="https://courage-kevin.github.io/tags/sku-spu/"/>
+    
+  </entry>
   
   <entry>
     <title>组件设计原则</title>
