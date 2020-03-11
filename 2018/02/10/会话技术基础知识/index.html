@@ -381,7 +381,7 @@
 <blockquote>
 <p> Cookie的API</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.创建Cookie对象</span></span><br><span class="line">    Cookie c = <span class="keyword">new</span> Cookie(String name, String value);</span><br><span class="line"><span class="comment">// 2.将Cookie添加到response响应中</span></span><br><span class="line">    response.addCookie(Cookie c);<span class="comment">//可以调用多次, 表示将多个cookie添加到响应中</span></span><br><span class="line"><span class="comment">// 3.获取请求中的所有cookie对象组成的数组</span></span><br><span class="line">    Cookie[] cs = request.getCookies();</span><br><span class="line"><span class="comment">//注意：该方法会返回请求中的所有cookie组成的数组, 若请求中没有cookie, 该方法会返回null.</span></span><br></pre></td></tr></table></figure>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.创建Cookie对象</span></span><br><span class="line">    Cookie c = <span class="keyword">new</span> Cookie(String name, String value);</span><br><span class="line"><span class="comment">// 2.将Cookie添加到response响应中</span></span><br><span class="line">    response.addCookie(Cookie c);<span class="comment">//可以调用多次, 表示将多个cookie添加到响应中</span></span><br><span class="line"><span class="comment">// 3.获取请求中的所有cookie对象组成的数组</span></span><br><span class="line">    Cookie[] cs = request.getCookies();</span><br><span class="line"><span class="comment">//注意：该方法会返回请求中的所有cookie组成的数组, 若请求中没有cookie, 该方法会返回null.</span></span><br></pre></td></tr></table></figure></div>
 <blockquote>
 <p> 删除Cookie<br> &emsp;没有直接删除cookie的方法，我们可以向浏览器再发送一个同名的cookie(比如名称为prod的cookie), 并设置cookie的存活时间为零, 最后将cookie发送给浏览器。由于浏览器是根据cookie的名字来区分cookie的，如果前后发送了两个名称一样的cookie，后发送cookie会覆盖之前发送的cookie。又由于后发送的cookie生存时间为零，浏览器收到后也会立即删除！！</p>
 </blockquote>
@@ -543,7 +543,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -554,7 +554,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -565,7 +565,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
