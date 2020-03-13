@@ -90,7 +90,7 @@
 <meta property="og:image" content="https://courage-kevin.github.io/images/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B01.png">
 <meta property="og:image" content="https://courage-kevin.github.io/images/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B02.png">
 <meta property="article:published_time" content="2020-03-11T13:54:48.000Z">
-<meta property="article:modified_time" content="2020-03-12T17:03:21.530Z">
+<meta property="article:modified_time" content="2020-03-13T14:35:06.156Z">
 <meta property="article:author" content="Courage-Kevin">
 <meta property="article:tag" content="React">
 <meta name="twitter:card" content="summary">
@@ -521,7 +521,6 @@
 <li>页面第一次加载的时候生命周期函数的执行顺序…<img src="/images/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B01.png" alt="avatar"></li>
 </ol>
 </blockquote>
-<p> 　　</p>
 <p><strong>二: 更新阶段 (updation) 执行的生命周期函数：</strong>props更新和states更新会执行的生命周期函数</p>
 <blockquote>
 <ol>
@@ -538,6 +537,42 @@
 <li>componentWillUnmount() 组件将要被移除的时候执行的函数</li>
 </ol>
 </blockquote>
+<p><br/><br/></p>
+<h2 id="React中的defaultProps和PropTypes"><a href="#React中的defaultProps和PropTypes" class="headerlink" title="React中的defaultProps和PropTypes"></a>React中的defaultProps和PropTypes</h2><blockquote>
+<ol>
+<li>defaultProps:父子组件传值中，如果父组件调用子组件的时候不给子组件传值，可以在子组件中使用defaultProps定义的默认值</li>
+<li>propTypes：验证父组件传递给子组件的类型合法性</li>
+</ol>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Children</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">        <span class="keyword">super</span>(props);</span><br><span class="line">        <span class="keyword">this</span>.state = &#123; </span><br><span class="line">           </span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    render() &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                <span class="comment">// 父组件如果没有传递title给Children,则会调用defaultProps中的默认值'标题'</span></span><br><span class="line">                <span class="comment">// 父组件如果传递了num属性过来，则会在propTypes中校验是否为num类型</span></span><br><span class="line">                &lt;h2&gt;---&#123;<span class="keyword">this</span>.props.title&#125;--- &#123;<span class="keyword">this</span>.props.num&#125;&lt;<span class="regexp">/h2&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>div&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//defaultProps如果父组件调用子组件的时候不给子组件传值，可以在子组件中使用defaultProps定义的默认值</span></span><br><span class="line">Children.defaultProps=&#123;</span><br><span class="line">    title:<span class="string">'标题'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//同行propTypes定义父组件给子组件传值的类型</span></span><br><span class="line">Header.propTypes=&#123;</span><br><span class="line">    num:PropTypes.number</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Children;</span><br></pre></td></tr></table></figure>
+<p><br/><br/></p>
+<h2 id="React获取服务器APi接口的数据"><a href="#React获取服务器APi接口的数据" class="headerlink" title="React获取服务器APi接口的数据"></a>React获取服务器APi接口的数据</h2><p>react中没有提供专门的请求数据的模块，但是我们可以使用任何第三方请求数据模块实现请求数据，使用很简单，官方文档介绍都比较详细，这里就不贴演示代码了。</p>
+<blockquote>
+<ol>
+<li>使用<a href="https://github.com/axios/axios" target="_blank" rel="noopener">axios</a></li>
+<li>使用<a href="https://github.com/camsong/fetch-jsonp" target="_blank" rel="noopener">fetch-jsonp</a></li>
+</ol>
+</blockquote>
+<h2 id="React路由配置"><a href="#React路由配置" class="headerlink" title="React路由配置"></a>React路由配置</h2><h3 id="eact路由的配置："><a href="#eact路由的配置：" class="headerlink" title="eact路由的配置："></a>eact路由的配置：</h3><blockquote>
+<ol>
+<li>找到官方文档 <a href="https://reacttraining.com/react-router/web/example/bas1" target="_blank" rel="noopener">https://reacttraining.com/react-router/web/example/bas1</a>. </li>
+<li>安装  yarn add  react-router-dom</li>
+<li>找到项目的根组件引入 import { BrowserRouter as Router, Route, Link } from “react-router-dom”;</li>
+<li>复制官网文档根组件里面的内容进行修改  （加载的组件要提前引入）</li>
+</ol>
+</blockquote>
+<h3 id="react动态路由传值"><a href="#react动态路由传值" class="headerlink" title="react动态路由传值"></a>react动态路由传值</h3><blockquote>
+<ol>
+<li>动态路由配置</li>
+</ol>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Route path=<span class="string">"/content/:aid"</span> component=&#123;Content&#125; /&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ol start="2">
+<li>对应的动态路由加载的组件里面获取传值 <code>this.props.match.params</code></li>
+</ol>
+</blockquote>
+<p><br/><br/></p>
 
       
     </div>
@@ -745,7 +780,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React"><span class="nav-number">1.</span> <span class="nav-text">React</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React之绑定属性"><span class="nav-number">1.1.</span> <span class="nav-text">React之绑定属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中引入图片的三种方式"><span class="nav-number">1.2.</span> <span class="nav-text">React中引入图片的三种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中循环数组数据渲染"><span class="nav-number">1.3.</span> <span class="nav-text">React中循环数组数据渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中改变this指向的三种方式"><span class="nav-number">1.4.</span> <span class="nav-text">React中改变this指向的三种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中给方法传递参数"><span class="nav-number">1.5.</span> <span class="nav-text">React中给方法传递参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中获取表单数据"><span class="nav-number">1.6.</span> <span class="nav-text">React中获取表单数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中通过ref获取dom"><span class="nav-number">1.7.</span> <span class="nav-text">React中通过ref获取dom</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React创建一个简单的可提交表单"><span class="nav-number">1.8.</span> <span class="nav-text">React创建一个简单的可提交表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中巧妙获取多个input框的值"><span class="nav-number">1.9.</span> <span class="nav-text">React中巧妙获取多个input框的值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中localStorage的使用"><span class="nav-number">1.10.</span> <span class="nav-text">React中localStorage的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中父子组件传值"><span class="nav-number">1.11.</span> <span class="nav-text">React中父子组件传值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#父组件给子组件传值"><span class="nav-number">1.11.1.</span> <span class="nav-text">父组件给子组件传值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父组给子组件传递方法"><span class="nav-number">1.11.2.</span> <span class="nav-text">父组给子组件传递方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将整个父组件传递给子组件"><span class="nav-number">1.11.3.</span> <span class="nav-text">将整个父组件传递给子组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父组件调用子组件的数据和方法"><span class="nav-number">1.11.4.</span> <span class="nav-text">父组件调用子组件的数据和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子组件主动向父组件传递数据"><span class="nav-number">1.11.5.</span> <span class="nav-text">子组件主动向父组件传递数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的生命周期函数"><span class="nav-number">1.12.</span> <span class="nav-text">React中的生命周期函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是声明生命周期函数？"><span class="nav-number">1.12.1.</span> <span class="nav-text">什么是声明生命周期函数？</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React"><span class="nav-number">1.</span> <span class="nav-text">React</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React之绑定属性"><span class="nav-number">1.1.</span> <span class="nav-text">React之绑定属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中引入图片的三种方式"><span class="nav-number">1.2.</span> <span class="nav-text">React中引入图片的三种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中循环数组数据渲染"><span class="nav-number">1.3.</span> <span class="nav-text">React中循环数组数据渲染</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中改变this指向的三种方式"><span class="nav-number">1.4.</span> <span class="nav-text">React中改变this指向的三种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中给方法传递参数"><span class="nav-number">1.5.</span> <span class="nav-text">React中给方法传递参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中获取表单数据"><span class="nav-number">1.6.</span> <span class="nav-text">React中获取表单数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中通过ref获取dom"><span class="nav-number">1.7.</span> <span class="nav-text">React中通过ref获取dom</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React创建一个简单的可提交表单"><span class="nav-number">1.8.</span> <span class="nav-text">React创建一个简单的可提交表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中巧妙获取多个input框的值"><span class="nav-number">1.9.</span> <span class="nav-text">React中巧妙获取多个input框的值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中localStorage的使用"><span class="nav-number">1.10.</span> <span class="nav-text">React中localStorage的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中父子组件传值"><span class="nav-number">1.11.</span> <span class="nav-text">React中父子组件传值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#父组件给子组件传值"><span class="nav-number">1.11.1.</span> <span class="nav-text">父组件给子组件传值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父组给子组件传递方法"><span class="nav-number">1.11.2.</span> <span class="nav-text">父组给子组件传递方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将整个父组件传递给子组件"><span class="nav-number">1.11.3.</span> <span class="nav-text">将整个父组件传递给子组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父组件调用子组件的数据和方法"><span class="nav-number">1.11.4.</span> <span class="nav-text">父组件调用子组件的数据和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#子组件主动向父组件传递数据"><span class="nav-number">1.11.5.</span> <span class="nav-text">子组件主动向父组件传递数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的生命周期函数"><span class="nav-number">1.12.</span> <span class="nav-text">React中的生命周期函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是声明生命周期函数？"><span class="nav-number">1.12.1.</span> <span class="nav-text">什么是声明生命周期函数？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React中的defaultProps和PropTypes"><span class="nav-number">1.13.</span> <span class="nav-text">React中的defaultProps和PropTypes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React获取服务器APi接口的数据"><span class="nav-number">1.14.</span> <span class="nav-text">React获取服务器APi接口的数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React路由配置"><span class="nav-number">1.15.</span> <span class="nav-text">React路由配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#eact路由的配置："><span class="nav-number">1.15.1.</span> <span class="nav-text">eact路由的配置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#react动态路由传值"><span class="nav-number">1.15.2.</span> <span class="nav-text">react动态路由传值</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
