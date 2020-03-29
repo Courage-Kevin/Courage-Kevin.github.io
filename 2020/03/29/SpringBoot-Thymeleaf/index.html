@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="基础知识," />
+  <meta name="keywords" content="springboot," />
 
 
 
@@ -81,16 +81,16 @@
 
 
 
-<meta name="description" content="Http协议什么是http协议当在上网浏览网页的时候，浏览器和服务器之间就会通过Http在Internet上进行数据的发送和接受。HTTP协议规定了浏览器和服务器之间通信的方式，也可以说是通信的规则。是应用层协议，是一个基于请求&#x2F;响应模式的，无状态的协议。  具体说，HTTP协议中主要规定了两个内容：  规定了浏览器该如何给服务器发送请求信息（即请求信息的格式） 同时也规定了服务器该如何给浏览器做">
+<meta name="description" content="Thymeleaf 模板引擎 SpringBoot官方不推荐使用JSP,因为内嵌的Tomcat、Jetty 容器不支持以jar形式运行JSP。Spring Boot中提供了大量模板引擎，包含Freemarker、Mastache、Thymeleaf等。而SpringBoot官方推荐使用Thymeleaf作为模板引擎， 因为Thymeleaf提供了完美的SpringMVC的支持。   简单理解，就是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Http协议基础知识">
-<meta property="og:url" content="https://courage-kevin.github.io/2018/02/06/Http%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:title" content="SpringBoot-Thymeleaf">
+<meta property="og:url" content="https://courage-kevin.github.io/2020/03/29/SpringBoot-Thymeleaf/index.html">
 <meta property="og:site_name" content="Courage-Kevin 个人博客">
-<meta property="og:description" content="Http协议什么是http协议当在上网浏览网页的时候，浏览器和服务器之间就会通过Http在Internet上进行数据的发送和接受。HTTP协议规定了浏览器和服务器之间通信的方式，也可以说是通信的规则。是应用层协议，是一个基于请求&#x2F;响应模式的，无状态的协议。  具体说，HTTP协议中主要规定了两个内容：  规定了浏览器该如何给服务器发送请求信息（即请求信息的格式） 同时也规定了服务器该如何给浏览器做">
-<meta property="article:published_time" content="2018-02-06T07:59:51.000Z">
-<meta property="article:modified_time" content="2020-02-06T11:34:31.492Z">
+<meta property="og:description" content="Thymeleaf 模板引擎 SpringBoot官方不推荐使用JSP,因为内嵌的Tomcat、Jetty 容器不支持以jar形式运行JSP。Spring Boot中提供了大量模板引擎，包含Freemarker、Mastache、Thymeleaf等。而SpringBoot官方推荐使用Thymeleaf作为模板引擎， 因为Thymeleaf提供了完美的SpringMVC的支持。   简单理解，就是">
+<meta property="article:published_time" content="2020-03-29T05:43:24.000Z">
+<meta property="article:modified_time" content="2020-03-29T06:54:39.929Z">
 <meta property="article:author" content="Courage-Kevin">
-<meta property="article:tag" content="基础知识">
+<meta property="article:tag" content="springboot">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://courage-kevin.github.io/2018/02/06/Http协议基础知识/"/>
+  <link rel="canonical" href="https://courage-kevin.github.io/2020/03/29/SpringBoot-Thymeleaf/"/>
 
 
 
 
 
-  <title>Http协议基础知识 | Courage-Kevin 个人博客</title>
+  <title>SpringBoot-Thymeleaf | Courage-Kevin 个人博客</title>
   
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2018/02/06/Http%E5%8D%8F%E8%AE%AE%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+    <link itemprop="mainEntityOfPage" href="https://courage-kevin.github.io/2020/03/29/SpringBoot-Thymeleaf/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Courage-Kevin">
@@ -295,7 +295,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Http协议基础知识</h1>
+          <h1 class="post-title" itemprop="name headline">SpringBoot-Thymeleaf</h1>
         
 
         <div class="post-meta">
@@ -307,8 +307,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T15:59:51+08:00">
-                2018-02-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-29T13:43:24+08:00">
+                2020-03-29
               </time>
             
 
@@ -319,28 +319,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/http%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index">
-                    <span itemprop="name">http基础知识</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -374,64 +352,43 @@
       
 
       
-        <h1 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h1><h2 id="什么是http协议"><a href="#什么是http协议" class="headerlink" title="什么是http协议"></a>什么是http协议</h2><p>当在上网浏览网页的时候，浏览器和服务器之间就会通过Http在Internet上进行数据的发送和接受。<br>HTTP协议规定了浏览器和服务器之间通信的方式，也可以说是通信的规则。是应用层协议，是一个基于请求/响应模式的，无状态的协议。</p>
+        <h2 id="Thymeleaf-模板引擎"><a href="#Thymeleaf-模板引擎" class="headerlink" title="Thymeleaf 模板引擎"></a>Thymeleaf 模板引擎</h2><blockquote>
+<p>SpringBoot官方不推荐使用JSP,因为内嵌的Tomcat、Jetty 容器不支持以jar形式运行JSP。Spring Boot中提供了大量模板引擎，包含<code>Freemarker</code>、<code>Mastache</code>、<code>Thymeleaf</code>等。而SpringBoot官方推荐使用<code>Thymeleaf</code>作为模板引擎， 因为<code>Thymeleaf</code>提供了完美的SpringMVC的支持。</p>
+</blockquote>
 <blockquote>
-<p>具体说，HTTP协议中主要规定了两个内容：</p>
+<p>简单理解，就是web开发以前我们是用jsp文件，用jspl表达式来处理服务器传递过来的数据，从而去渲染页面。现在有了<code>Thymeleaf</code>我们只需要用html文件即可，不用再将html文件改成jsp文件。当然我们也要学习Thymeleaf的一些语法</p>
+</blockquote>
+<h2 id="引入Thymeleaf"><a href="#引入Thymeleaf" class="headerlink" title="引入Thymeleaf"></a>引入Thymeleaf</h2><p>springBoot中要使用Thymeleaf，先引入依赖。</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="XML"><figure class="iseeu highlight /xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="使用Thymeleaf"><a href="#使用Thymeleaf" class="headerlink" title="使用Thymeleaf"></a>使用Thymeleaf</h2><p>我们该如何使用呢？很简单，我们先看一下源码</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties</span>( prefix = <span class="string">"spring.thymeleaf"</span> )</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThymeleafProperties</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Charset DEFAULT_ENCODING;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String DEFAULT_PREFIX = <span class="string">"classpath:/templates/"</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String DEFAULT_SUFFIX = <span class="string">".html"</span>;</span><br></pre></td></tr></table></figure></div>
+<p>通过上面分析发现，将HTML页面放到 classpath:/templates/目录下，Thymeleaf就能自动渲染。   </p>
+<p>let’s do it！</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="comment">// localhost:8080/success 即可访问到success.html页面</span></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@RequestMapping</span>( <span class="string">"/success"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">success</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"success"</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在 html页面加上以下名称空间, 使用Thymeleaf时就有语法提示 --&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:th</span>=<span class="string">"http://www.thymeleaf.org"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>thymeleaf模板文件<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>success!!!!<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+
+<h2 id="使用Thymeleaf引入公共的页面"><a href="#使用Thymeleaf引入公共的页面" class="headerlink" title="使用Thymeleaf引入公共的页面"></a>使用Thymeleaf引入公共的页面</h2><p>在项目的页面中，我们经常会公用头部导航、底部公司信息等等，那使用Thymeleaf如何去做到JSP中include的这种功能呢？这就需要用Thymeleaf的语法了，直接上演示代码吧，也很简单</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- th:fragment 声明公共代码片段 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">th:fragment</span>=<span class="string">"header_common"</span>&gt;</span></span><br><span class="line">       fragment声明的公共头部导航组件</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 在标签元素上定义id也可以声明公共代码片段 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"header_common_id"</span>&gt;</span></span><br><span class="line">        id声明的公共头部导航组件</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 在标签元素上定义class也声明公共代码片段 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header_common_class"</span>&gt;</span></span><br><span class="line">        class声明的公共头部导航组件</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- fragment方式获取公共组件 header是文件名...(header.html)  --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"header :: header_common"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- id方式获取公共组件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">th:replace</span>=<span class="string">"header :: #header_common_id"</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">th:insert</span>=<span class="string">"header :: #header_common_id"</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- class方式获取公共组件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"header :: .header_common_class"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>简单总结：</p>
 <ol>
-<li>规定了浏览器该如何给服务器发送请求信息（即请求信息的格式）</li>
-<li>同时也规定了服务器该如何给浏览器做响应信息（即响应信息的格式）   </li>
+<li>先<code>th:fragment</code>、<code>id</code>、<code>class</code>定义好公共的组件</li>
+<li>在需要的页面中通过<code>th:replace</code>或者<code>th:insert</code>引入，这两个的区别是：<ul>
+<li><code>th:replace</code>在渲染页面的时候不会保留<code>&lt;h2&gt;</code>这个标签的标题样式，直接帮你变成div</li>
+<li><code>th:insert</code>则会帮你保留标题样式。</li>
+</ul>
+</li>
 </ol>
-</blockquote>
-<hr>
-<h2 id="Http1-0"><a href="#Http1-0" class="headerlink" title="Http1.0"></a>Http1.0</h2><blockquote>
-<p>当连接建立之后，浏览器发送一个请求，服务器回应一个消息，之后连接就被关闭。当浏览器下一次请求的时候，需要重新建立新的连接，显然这种需要不断建立连接的通信方式开销较大。早期的web页面通常只包含HTML文件，因此即使建立连接的开销比较大，也不会有太大的影响。而现在的web页面通常包含多种资源，（图片，动画，声音），每获取一种资源，就建立一次连接。这样就增加了HTTP服务器的开销，造成了Internet上的信息阻塞。</p>
-</blockquote>
-<hr>
-<h2 id="Http1-1"><a href="#Http1-1" class="headerlink" title="Http1.1"></a>Http1.1</h2><blockquote>
-<p>因此在Http1.1版本中，给出了一个持续连接的机制，并将其作为1.1中建立连接的缺省行为，通过这种连接，浏览器可以建立一个连接之后，发送请求并得到响应，然后继续发送请求并在此得到回应，而且客户端还可以发送流水线请求，也就是说，客户端可以连续发送多个请求，而不用等待每一个响应的到来。</p>
-</blockquote>
-<hr>
-<h2 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h2><blockquote>
-<ol>
-<li>客户端与服务器端建立连接前，客户端会向服务器发送第一条消息，询问服务器端是否准备好了。第一次握手</li>
-<li>服务器端收到客户端发来的询问之后，会给客户端发送一条消息，告诉客户端已经准备好了。第二次握手</li>
-<li>当客户端在收到服务器端发过来的消息之后，会在此确认，客户端会在向服务器发起响应确认准备好了，第三次握手。之后建立连接</li>
-</ol>
-</blockquote>
-<hr>
-<h2 id="Http工作时遵循的基本原则-了解"><a href="#Http工作时遵循的基本原则-了解" class="headerlink" title="Http工作时遵循的基本原则(了解):"></a>Http工作时遵循的基本原则(了解):</h2><blockquote>
-<ol>
-<li>基于请求响应模型</li>
-<li>一次请求只对应一次响应</li>
-<li>只能是浏览器向服务器发送请求, 服务器只能等待浏览器的请求, 再根据请求做出回应</li>
-</ol>
-</blockquote>
-<hr>
-<h2 id="GET请求和POST请求方式的区别："><a href="#GET请求和POST请求方式的区别：" class="headerlink" title="GET请求和POST请求方式的区别："></a>GET请求和POST请求方式的区别：</h2><p>两者之间的区别主要体现在请求参数发送过程的不相同</p>
-<blockquote>
-<p>GET提交: 通过请求行拼接参数将数据发送给服务器<br>&emsp;1.通过地址栏携带参数, 相对不安全<br>&emsp;2.通过地址栏发送数据, 数据量不能太大(不能超过1kb或者是4kb);  </p>
-</blockquote>
-<blockquote>
-<p>POST提交: 通过请求实体内容携带参数, 数据不会显示在地址栏<br>&emsp;1.参数不会出现地址栏, 相对更安全<br>&emsp;2.数据通过请求实体内容发送, 数据量理论上没有限制.</p>
-</blockquote>
-<hr>
-<h2 id="服务器种类："><a href="#服务器种类：" class="headerlink" title="服务器种类："></a>服务器种类：</h2><blockquote>
-<p>Tomcat、Resin、Jetty、Weblogic、WebSphere、JBoss</p>
-</blockquote>
-<blockquote>
-<p>B/S：Browser Server 浏览器服务器模型  （不需要下载客户端的） 京东、淘宝、网页游戏。<br>优点：不需要下载客户端程序，使用浏览器可以直接访问，程序的升级操作是在服务器端进行的。<br>缺点：浏览器具有一定的局限性，页面的展示差，页面的数据需要从服务器实时获取，对网速的依赖很高</p>
-</blockquote>
-<blockquote>
-<p>C/S：Client Server客户端服务器模型       （需要下载客户端的） QQ  LOL 梦幻西游 。<br>优点：客户端可以任意设计，页面的展示能力强。由于大量资源已经保存在了客户端，对服务器的交互仅仅是一些数据的变化，对于网速的依赖很低。<br>缺点：第一次使用时需要下载客户端程序，一旦程序需要升级操作，所有的客户端程序都需要升级。</p>
-</blockquote>
-<hr>
-<h2 id="XML解析方式："><a href="#XML解析方式：" class="headerlink" title="XML解析方式："></a>XML解析方式：</h2><h3 id="DOM解析："><a href="#DOM解析：" class="headerlink" title="DOM解析："></a>DOM解析：</h3><blockquote>
-<p>原理：<br>解析器将整个xml文档加载进内存，保存为一颗Document的对象树，<br>通过Document对象，得到树上的节点对象，对每个对象提供增删改查操作对应的方法<br>优点：<br>&emsp;1.可以十分方便对节点进行增删改查操作，<br>&emsp;2.解析一次即可重复使用数据由于在内存中保存了文档结构树，<br>缺点：<br>&emsp;1.如果文档较大，占用内存空间，甚至内存溢出<br>&emsp;2.将整个文档解析完才能操作，相对耗费时间，效率低</p>
-</blockquote>
-<h3 id="SAX解析："><a href="#SAX解析：" class="headerlink" title="SAX解析："></a>SAX解析：</h3><blockquote>
-<p>原理：解析器逐行扫描xml文档，利用处理器接口中的方法进行解析<br>优点：<br>&emsp;1.无需将整个xml文档加载到内存，占用内存小<br>&emsp;2.由于逐行解析，遇到需要内容停下来处理，效率高<br>缺点：<br>&emsp;1.每次需要数据，都要重新解析<br>&emsp;2.只能读取数据，不能做增删改操作。   </p>
-</blockquote>
-<hr>
+<h2 id="使用Thymeleaf获取服务端数据"><a href="#使用Thymeleaf获取服务端数据" class="headerlink" title="使用Thymeleaf获取服务端数据"></a>使用Thymeleaf获取服务端数据</h2><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>( <span class="string">"/success"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">success</span><span class="params">(Map&lt;String, Object&gt; map)</span> </span>&#123;</span><br><span class="line">        List&lt;User&gt; userList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        userList.add(<span class="keyword">new</span> User(<span class="string">"jack"</span>, <span class="number">1</span>));  <span class="comment">//自己建个User对象</span></span><br><span class="line">        userList.add(<span class="keyword">new</span> User(<span class="string">"snow"</span>, <span class="number">2</span>));</span><br><span class="line">        userList.add(<span class="keyword">new</span> User(<span class="string">"bill"</span>, <span class="number">1</span>));</span><br><span class="line">        map.put(<span class="string">"userList"</span>,userList);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"success"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p><code>th:each</code> 循环取出userList中的User对象，并将User对象的属性渲染到表格中</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="HTML"><figure class="iseeu highlight /html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:th</span>=<span class="string">"http://www.thymeleaf.org"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>thymeleaf模板success<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>性别<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span> <span class="attr">th:each</span>=<span class="string">"user : $&#123;userList&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:text</span>=<span class="string">"$&#123;user.name&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:text</span>=<span class="string">"$&#123;user.gender==1?'女':'男'&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+<p>差不多就这么用吧，使用起来也没什么特别难的地方，主要搞清楚他的语法规则即可。</p>
+<h2 id="Thymeleaf语法"><a href="#Thymeleaf语法" class="headerlink" title="Thymeleaf语法"></a>Thymeleaf语法</h2><p>参考 <code>Thymeleaf</code> 官方文档 <a href="https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#attribute-precedence" target="_blank" rel="noopener">:10 Attribute Precedence</a></p>
 
       
     </div>
@@ -459,7 +416,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag"><i class="fa fa-tag"></i>基础知识</a>
+            <a href="/tags/springboot/" rel="tag"><i class="fa fa-tag"></i>springboot</a>
           
         </div>
       
@@ -472,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/01/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" rel="next" title="Java基础知识总结">
-                <i class="fa fa-chevron-left"></i> Java基础知识总结
+              <a href="/2020/03/21/SpringBoot%E5%AD%A6%E4%B9%A0/" rel="next" title="SpringBoot学习">
+                <i class="fa fa-chevron-left"></i> SpringBoot学习
               </a>
             
           </div>
@@ -481,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/06/Java%E5%B8%B8%E7%94%A8API%E5%B0%8FDemo/" rel="prev" title="Java常用API小Demo">
-                Java常用API小Demo <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -643,7 +596,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Http协议"><span class="nav-number">1.</span> <span class="nav-text">Http协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是http协议"><span class="nav-number">1.1.</span> <span class="nav-text">什么是http协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Http1-0"><span class="nav-number">1.2.</span> <span class="nav-text">Http1.0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Http1-1"><span class="nav-number">1.3.</span> <span class="nav-text">Http1.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三次握手"><span class="nav-number">1.4.</span> <span class="nav-text">三次握手</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Http工作时遵循的基本原则-了解"><span class="nav-number">1.5.</span> <span class="nav-text">Http工作时遵循的基本原则(了解):</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GET请求和POST请求方式的区别："><span class="nav-number">1.6.</span> <span class="nav-text">GET请求和POST请求方式的区别：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器种类："><span class="nav-number">1.7.</span> <span class="nav-text">服务器种类：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML解析方式："><span class="nav-number">1.8.</span> <span class="nav-text">XML解析方式：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM解析："><span class="nav-number">1.8.1.</span> <span class="nav-text">DOM解析：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SAX解析："><span class="nav-number">1.8.2.</span> <span class="nav-text">SAX解析：</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thymeleaf-模板引擎"><span class="nav-number">1.</span> <span class="nav-text">Thymeleaf 模板引擎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入Thymeleaf"><span class="nav-number">2.</span> <span class="nav-text">引入Thymeleaf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Thymeleaf"><span class="nav-number">3.</span> <span class="nav-text">使用Thymeleaf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Thymeleaf引入公共的页面"><span class="nav-number">4.</span> <span class="nav-text">使用Thymeleaf引入公共的页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Thymeleaf获取服务端数据"><span class="nav-number">5.</span> <span class="nav-text">使用Thymeleaf获取服务端数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Thymeleaf语法"><span class="nav-number">6.</span> <span class="nav-text">Thymeleaf语法</span></a></li></ol></div>
             
 
           </div>
