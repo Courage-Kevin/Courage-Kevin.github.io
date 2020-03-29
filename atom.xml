@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://courage-kevin.github.io/"/>
-  <updated>2020-03-29T04:50:24.379Z</updated>
+  <updated>2020-03-26T14:07:09.609Z</updated>
   <id>https://courage-kevin.github.io/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://courage-kevin.github.io/2020/03/29/test/"/>
-    <id>https://courage-kevin.github.io/2020/03/29/test/</id>
-    <published>2020-03-29T04:50:00.000Z</published>
-    <updated>2020-03-29T04:50:24.379Z</updated>
-    
-    <content type="html"><![CDATA[<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.snow.springboot.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.snow.springboot.entity.User;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Controller;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>( <span class="string">"/success"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">success</span><span class="params">(Map&lt;String, Object&gt; map)</span> </span>&#123;</span><br><span class="line">        map.put(<span class="string">"name"</span>, <span class="string">"snow"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"success"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>( <span class="string">"/map"</span> )</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">study</span><span class="params">(Map&lt;String, Object&gt; map)</span> </span>&#123;</span><br><span class="line">        List&lt;User&gt; userList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        userList.add(<span class="keyword">new</span> User(<span class="string">"jack"</span>, <span class="number">1</span>));</span><br><span class="line">        userList.add(<span class="keyword">new</span> User(<span class="string">"snow"</span>, <span class="number">2</span>));</span><br><span class="line">        userList.add(<span class="keyword">new</span> User(<span class="string">"bill"</span>, <span class="number">1</span>));</span><br><span class="line">        map.put(<span class="string">"userList"</span>,userList);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"study"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;div class=&quot;highlight-wrap&quot;autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot; contenteditable=&quot;true&quot;data-rel=&quot;JAVA
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>SpringBoot学习</title>
@@ -527,6 +505,32 @@
     
     
       <category term="Servlet基础知识" scheme="https://courage-kevin.github.io/categories/Servlet%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="基础知识" scheme="https://courage-kevin.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>会话技术基础知识</title>
+    <link href="https://courage-kevin.github.io/2018/02/10/%E4%BC%9A%E8%AF%9D%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://courage-kevin.github.io/2018/02/10/%E4%BC%9A%E8%AF%9D%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2018-02-10T14:13:57.000Z</published>
+    <updated>2020-02-06T11:34:46.699Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="会话技术"><a href="#会话技术" class="headerlink" title="会话技术"></a>会话技术</h1><h2 id="什么是会话"><a href="#什么是会话" class="headerlink" title="什么是会话?"></a>什么是会话?</h2><blockquote><p>&emsp;为了实现某一个功能(比如购物), 浏览器和服务器之间可能会产生多次的请求和响应。从浏览器访问服务器开始，到访问服务器结束，浏览器关闭为止，这期间产生的多次请求和响应加在一起就称之为浏览器和服务器之间的一次会话！  </p></blockquote><blockquote><p>&emsp;会话中往往会产生一些数据，而这些数据往往是需要我们保存起来的，如何保存会话中产生的数据呢？这里可以使用会话技术(也就是Cookie和session)来保存会话中产生的数据</p></blockquote><h2 id="Cookie-和-Session-保存数据的原理"><a href="#Cookie-和-Session-保存数据的原理" class="headerlink" title="Cookie 和 Session 保存数据的原理"></a>Cookie 和 Session 保存数据的原理</h2><h3 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h3><blockquote><p>&emsp;通过 Set-Cookie响应头 和 Cookie请求头 将会话中产生的数据保存在客户端( 浏览器 ) , 当浏览器在此访问服务器时,服务器会获取上一次会话发送给浏览器的Cookie信息,通过这种方式来保存会话中的数据。由于Cookie技术是将会话中产生的数据保存在客户端，每个客户端各自持有自己的数据，当需要时再带给服务器，因此不会发生混乱！  </p></blockquote><blockquote><p> Cookie的API</p></blockquote><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.创建Cookie对象</span></span><br><span class="line">    Cookie c = <span class="keyword">new</span> Cookie(String name, String value);</span><br><span class="line"><span class="comment">// 2.将Cookie添加到response响应中</span></span><br><span class="line">    response.addCookie(Cookie c);<span class="comment">//可以调用多次, 表示将多个cookie添加到响应中</span></span><br><span class="line"><span class="comment">// 3.获取请求中的所有cookie对象组成的数组</span></span><br><span class="line">    Cookie[] cs = request.getCookies();</span><br><span class="line"><span class="comment">//注意：该方法会返回请求中的所有cookie组成的数组, 若请求中没有cookie, 该方法会返回null.</span></span><br></pre></td></tr></table></figure></div><blockquote><p> 删除Cookie<br> &emsp;没有直接删除cookie的方法，我们可以向浏览器再发送一个同名的cookie(比如名称为prod的cookie), 并设置cookie的存活时间为零, 最后将cookie发送给浏览器。由于浏览器是根据cookie的名字来区分cookie的，如果前后发送了两个名称一样的cookie，后发送cookie会覆盖之前发送的cookie。又由于后发送的cookie生存时间为零，浏览器收到后也会立即删除！！</p></blockquote><h3 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h3><blockquote><p>&emsp;浏览器第一次发送请求需要保存数据时，服务端获取到需要保存的数据，去服务器内部检查一下有没有为当前浏览器服务的session，如果有就直接拿过来用，如果没有session就创建一个新的session拿过来用。接着将数据保存在Session中，做出响应。当浏览器再去访问服务器时，服务器可以从session中获取到之前为当前浏览器保存的数据，通过这种方式，也可以来保存会话中产生的数据。</p></blockquote><h3 id="Cookie-和-Session的异同"><a href="#Cookie-和-Session的异同" class="headerlink" title="Cookie 和 Session的异同"></a>Cookie 和 Session的异同</h3><blockquote><p>相同点：Cookie和Session都是用于保存会话中产生的数据，都是会话技术<br>不同点:<br>Cookie：</p><blockquote><ol><li>Cookie是将会话产生的数据保存在客户端，是客户端技术</li><li>Cookie将数据保存在客户端，不占服务器内存，可以提高服务器性能</li><li>Cookie适合存储安全性要求不高，但是需要长时间保存的数据  <pre><code>（因为保存在浏览器客户端，数据容易丢失，或被窃取）</code></pre></li></ol></blockquote></blockquote><blockquote><p>Session：</p><blockquote><ol><li>Session是将会话产生的数据保存在服务器，是服务器端技术</li><li>Session将数据保存在服务器端，占用服务器内存，影响服务器性能</li><li>Session适合存储对安全性要求较高，但是不需要长时间保存的数据  <pre><code>（不会随着用户操作，导致数据丢失或被窃取，安全性高）</code></pre></li></ol></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;会话技术&quot;&gt;&lt;a href=&quot;#会话技术&quot; class=&quot;headerlink&quot; title=&quot;会话技术&quot;&gt;&lt;/a&gt;会话技术&lt;/h1&gt;&lt;h2 id=&quot;什么是会话&quot;&gt;&lt;a href=&quot;#什么是会话&quot; class=&quot;headerlink&quot; title=&quot;什么是会话?&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="会话基础知识" scheme="https://courage-kevin.github.io/categories/%E4%BC%9A%E8%AF%9D%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     
     
       <category term="基础知识" scheme="https://courage-kevin.github.io/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
